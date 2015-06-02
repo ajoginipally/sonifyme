@@ -1,4 +1,4 @@
 # sonifyme
-App that matches people with pieces from within their favorite musician's body of work
+App that matches people with songs and albums from their favorite musical artist or band that they personify
 
 May include artist-specific options
