@@ -1,110 +1,143 @@
 @import url(http://fonts.googleapis.com/css?family=Marck+Script);
-         body{
-            overflow:hidden;
-            font-family: 'Marck Script', cursive;
-            background-color:rgba(21, 10, 10, 0.77);
-         }
-         h1{
-            font-size:1.5em;
-            margin:3px;
-         }
-         h2{
-            font-size:1.1em;
-            margin:2px;
-         }
-         h3{
-            font-size:.9em;
-            margin:2px;
-         }
-         hr{
-            margin:2px;
-         }
-        
-         #quiz-questions li, #break-questions li{
-            list-style-type:none;
-            border-bottom:1px solid gray;
-            margin:5px;
-         }
-         #quiz-questions, #break-questions{
-            margin-top:2px;
-            padding-left:15px;
-         }
-         #quiz-questions li:last-child, #break-questions li:last-child{
-            border-bottom:none;
-         }
-         #quiz{
-            
-            top:5%;
-            
-         }
-         
-         #break-up{
-           
-            top:105%;
-           
-         }
-         
-         #extra{
-            top:210%;
-         }
-         #main-1{
-            top:315%;
-         }
-         #main-2{
-            top:420%;
-         }
-         #swift-gen, #mood, #top-song, #break-up-main{
-            height:45%;
-            border-bottom:1px solid gray;
-            margin:25px;
-            
-         }
-         #break-up-main{
-            border-bottom:none;
-         }
-        .go-break, .go-extra, .go-main{
-            position:absolute;
-            left:80%;
-         }
-         .card{
-            border-radius:20px;
-            margin:5px;
-            margin-bottom:20px;
-            height:90%;
-            width:50%;
-            left:25%;
-            position:absolute; 
-            display:block;
-            text-align:center;
-            background-color: #fff1a9;
-            overflow-y:auto;
-            overflow-x:hidden;
-            padding-right:15px;
-         }
-         .nav-1, .nav-2{
-            z-index:2;
-            top:5%;
-            width:100px;
-            margin-right:1px;
-            position:relative;
-            float:right;
-            
+@import url(http://fonts.googleapis.com/css?family=Philosopher);
+body{
+   overflow:hidden;
+   font-family: 'Marck Script', cursive;
+   background-color:rgba(21, 10, 10, 0.77);
+}
+h1{
+   font-size:1.5em;
+   margin:3px;
+   color:#AD0505;
+}
+h2{
+   font-size:1.1em;
+   margin:2px;
+}
+h3{
+   font-size:.9em;
+   margin:2px;
+}
+hr{
+   margin:2px;
+}
 
-         }
-         .nav-1 li, .nav-2 li{
-            list-style-type:none;
-         }
-         
-         @media (max-width:768px){
-            #quiz, #break-up, #extra, #main{
-               width:90%;
-               left:4%;
-               height:92%;
-            }
-            .card{
-               width:90%;
-               left:4%;
-               height:92%;
-            }
+#quiz-questions li, #break-questions li{
+   list-style-type:none;
+   border-bottom:1px solid gray;
+   margin:5px;
+}
+#quiz-questions, #break-questions{
+   margin-top:2px;
+   padding-left:15px;
+}
+#quiz-questions li:last-child, #break-questions li:last-child{
+   border-bottom:none;
+}
+#quiz{      
+   top:5%;
+} 
+#break-up{
+  
+   top:105%; 
+}
+#extra{
+   top:210%;
+}
+#main-1{
+   top:322%;
+}
+#main-2{
+   top:420%;
+}
+#swift-gen, #mood, #top-song, #break-up-main{
+   height:45%;
+   border-bottom:1px solid gray;
+   margin:25px; 
+}
+#swift-gen{
+   height:35%;
+}
+#mood{
+   height:52%;
+}
+#break-up-main{
+   border-bottom:none;
+}
+.go-break, .go-extra, .go-main{
+   position:relative;
+   left:40%;
+   top:98%;
+}
 
-         }
+.card{
+   border-radius:20px;
+   margin:5px;
+   margin-bottom:20px;
+   height:90%;
+   width:50%;
+   left:25%;
+   padding:5px;
+   position:absolute; 
+   display:block;
+   text-align:center;
+   background-color: #fff1a9;
+   overflow-y:auto;
+   overflow-x:hidden;
+   padding-right:15px;
+}
+.nav-1, .nav-2{
+   z-index:2;
+   top:5%;
+   width:100px;
+   margin-right:1px;
+   position:relative;
+   float:right;
+}
+.nav-1 li, .nav-2 li{
+   list-style-type:none;
+}
+#quiz-questions li:nth-child(even), #break-questions li:nth-child(even), .playlist li:nth-child(even), .trendlist li:nth-child(even){
+   background-color:#FA926C;
+}
+a{
+   text-decoration:none;
+   color:black;
+   font-weight:bold;
+   font-family: 'Philosopher', sans-serif;
+}
+a::link{
+   
+}
+a::hover{
+   color:darkred;
+}
+a::active{
+
+}
+
+progress{
+   position:relative;
+   bottom:15px;
+}
+button{
+   background-color:rgba(255, 255, 255, 0.42);
+   border-radius:15px;
+   padding:3px;
+   padding-left:6px;
+   padding-right:6px;
+   
+}
+@media (max-width:768px){
+   #quiz, #break-up, #extra, #main{
+      width:90%;
+      left:4%;
+      height:92%;
+   }
+   .card{
+      width:90%;
+      left:4%;
+      height:92%;
+   }
+
+}
