@@ -1,0 +1,149 @@
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+         body{
+            overflow:hidden;
+            font-family: 'Marck Script', cursive;
+            background-color:rgba(21, 10, 10, 0.77);
+         }
+         h1{
+            font-size:1.5em;
+            margin:3px;
+         }
+         h2{
+            font-size:1.1em;
+            margin:2px;
+         }
+         h3{
+            font-size:.9em;
+            margin:2px;
+         }
+         hr{
+            margin:2px;
+         }
+        
+         #quiz-questions li, #break-questions li{
+            list-style-type:none;
+            border-bottom:1px solid gray;
+            margin:5px;
+         }
+         #quiz-questions, #break-questions{
+            margin-top:2px;
+            padding-left:15px;
+         }
+         #quiz-questions li:last-child, #break-questions li:last-child{
+            border-bottom:none;
+         }
+         #quiz{
+            height:90%;
+            top:5%;
+            width:50%;
+            left:25%;
+            margin:5px;
+            position:absolute;
+            display:block;
+            border-radius:20px;
+            text-align:center;
+            background-color:#fff1a9;
+            overflow-y:auto;
+            overflow-x:hidden;
+            padding-right:15px;
+         }
+         
+         #break-up{
+            border-radius:20px;
+            margin:5px;
+            margin-bottom:20px;
+            height:90%;
+            top:105%;
+            width:50%;
+            left:25%;
+            position:absolute; 
+            display:block;
+            text-align:center;
+            background-color: #fff1a9;
+            overflow-y:auto;
+            overflow-x:hidden;
+            padding-right:15px;
+         }
+         
+         #extra{
+           
+            top:210%;
+            width:50%;
+            left:25%;
+            position:absolute; 
+            
+         
+         }
+         #main{
+            border-radius:20px;
+            margin:5px;
+            margin-bottom:20px;
+            height:90%;
+            top:315%;
+            width:50%;
+            left:25%;
+            position:absolute; 
+            display:block;
+            text-align:center;
+            background-color: #fff1a9;
+            overflow-y:auto;
+            overflow-x:hidden;
+            padding-right:15px;
+         
+         
+         }
+         #swift-gen, #mood, #top-song, #break-up-main{
+            height:50%;
+            border-bottom:1px solid gray;
+            margin:25px;
+            
+         }
+         #break-up-main{
+            border-bottom:none;
+         }
+        .go-break, .go-extra, .go-main{
+            position:absolute;
+            left:80%;
+         }
+         .card{
+            border-radius:20px;
+            margin:5px;
+            margin-bottom:20px;
+            height:90%;
+            width:50%;
+            left:25%;
+            position:absolute; 
+            display:block;
+            text-align:center;
+            background-color: #fff1a9;
+            overflow-y:auto;
+            overflow-x:hidden;
+            padding-right:15px;
+         }
+         .nav{
+            z-index:2;
+            top:325%;
+            left:62%;
+            width:100px;
+            margin-right:1px;
+            position:fixed;
+            display:none;
+
+         }
+         .nav li{
+            list-style-type:none;
+         }
+         
+         @media (max-width:768px){
+            #quiz, #break-up, #extra, #main{
+               width:90%;
+               left:4%;
+               height:92%;
+            }
+            .card{
+               width:90%;
+               left:4%;
+               height:92%;
+            }
+
+         }
