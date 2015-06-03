@@ -26,6 +26,7 @@ hr{
    list-style-type:none;
    border-bottom:1px solid gray;
    margin:5px;
+   font-family:'Philosopher', sans-serif;
 }
 #quiz-questions, #break-questions{
    margin-top:2px;
@@ -38,7 +39,6 @@ hr{
    top:5%;
 } 
 #break-up{
-  
    top:105%; 
 }
 #extra{
@@ -50,9 +50,11 @@ hr{
 #main-2{
    top:420%;
 }
+#swift-gen, #top-song{
+   border-bottom:1px solid gray;
+}
 #swift-gen, #mood, #top-song, #break-up-main{
    height:45%;
-   border-bottom:1px solid gray;
    margin:25px; 
 }
 #swift-gen{
@@ -65,9 +67,9 @@ hr{
    border-bottom:none;
 }
 .go-break, .go-extra, .go-main{
-   position:relative;
-   left:40%;
-   top:98%;
+   position:absolute;
+   right:6%;
+   bottom:2%;
 }
 
 .card{
@@ -97,8 +99,10 @@ hr{
 .nav-1 li, .nav-2 li{
    list-style-type:none;
 }
+
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even), .playlist li:nth-child(even), .trendlist li:nth-child(even){
    background-color:#FA926C;
+
 }
 a{
    text-decoration:none;
@@ -106,19 +110,11 @@ a{
    font-weight:bold;
    font-family: 'Philosopher', sans-serif;
 }
-a::link{
-   
-}
-a::hover{
-   color:darkred;
-}
-a::active{
-
-}
 
 progress{
-   position:relative;
-   bottom:15px;
+   position:absolute;
+   bottom:2%;
+   right:27%;
 }
 button{
    background-color:rgba(255, 255, 255, 0.42);
