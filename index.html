@@ -4,14 +4,12 @@
     <head>
         <title>Swift-ly</title>
         <meta charset="UTF-8">
-        <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
 
         <!-- TODO: @ajoginipally  -->
-        <meta name="description" content="Personalized Taylor Swift info generator">
-        <meta name="keywords" content="Taylor Swift, Quiz, Break-up, Mood, Red, Speak Now, 1989, Fearless">
-        <meta name="author" content="Abhi Joginipally, Susan Souza, Kameron Sween">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="">
 
 
         <link href='main.css' rel='stylesheet' type='text/css'>
@@ -21,7 +19,7 @@
 
         <!-- This is your quiz page -->
         <form id="quiz" class="card">
-            <div id="quiz-title">
+            <div id=title>
                 <h1>Taylor.sonify</h1>
                 <h2>How does swift define your life?</h2>
             </div>
@@ -103,9 +101,7 @@
                 </li>
             </ul>
 
-            <button type="button" id="go-break" accesskey="a" tabindex="1">
-                <a href="#break-up">Next!</a>
-            </button> <br>
+            <button type="button" class="go-break"><a href="#break-up">Next!</a></button> <br>
             <progress value="1" max="3"></progress>
         </form>
 
@@ -113,7 +109,7 @@
 
         <!-- this is your break up page -->
         <form id="break-up" class="card">
-            <div id="break-title">
+            <div id="title">
                 <h1>swift.breakup</h1>
                 <h2>Find out what song defines your break up!</h2>
             </div>
@@ -165,61 +161,47 @@
                 </li>
             </ul>
             <!-- TODO: ACCESSKEY and TABINDEX to all buttons -->
-            <button type="button" id="go-extra" accesskey="b" tabindex="2">
-                <a href="#extra">Next!</a>
-            </button> <br>
+            <button type="button" class="go-extra"><a href="#extra">Next!</a></button> <br>
             <progress value="2" max="3"></progress>
         </form>
 
         <div class="break-extra"></div>
 
-       <!-- This is the extra section -->
         <form id="extra" class="card">
             <!-- TODO: 'title' is already in use as an ID all IDs must be unique -->
-            <div id="extra-title">
+            <div id="title">
                 <h1>Extras!</h1>
                 <h2>A couple add-ons to improve your swift experience.</h2>
             </div>
 
             <div id="questions">
               <!-- TODO: add values to all checkboxes -->
-                <input type="checkbox" name="theme" value="swift-theme">Would you like a personal Swift-theme?<br>
-                <input type="checkbox" name="theme" value="swift-mood">How about a mood playlist?<br>
+                <input type="checkbox" name="theme">Would you like a personal Swift-theme?<br>
+                <input type="checkbox" name="theme">How about a mood playlist?<br>
             </div>
 
-            <button type="button" id="go-main" accesskey="c" tabindex="3">
-                <a href="#main-1">Done!</a>
-            </button> <br>
-           
+            <button type="button" class="go-main"><a href="#main-1">Done!</a></button> <br>
             <progress value="3" max="3"></progress>
         </form>
 
         <div class="extra-main"></div>
 
         <!-- this is your main page. can you remove the bullets in the list using css. -->
-            <!-- h2's are going to be   your dummies -->
+            <!-- h2's are going to be your dummies -->
             <div id="main-1" class="card">
 
-                <div id="nav-1">
+                <div class="nav-1">
                     <ul class="nav-pills">
-                        <li role="presentation">
-                            <button type="button" class="btn" accesskey="q" tabindex="4">
-                                <a href="#main-1">Nav 1</a>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button type="button" class="btn" accesskey="w" tabindex="5">
-                                <a href="#main-2">Nav 2</a>
-                            </button>
-                        </li>
+                        <li role="presentation"><button type="button" class="btn"><a href="#swift-gen">Nav 1</a></button></li>
+                        <li role="presentation"><button type="button" class="btn"><a href="#top-song">Nav 2</a></button></li>
                     </ul>
                 </div>
 
                 <div id="swift-gen">
                     <h1>YOUR SWIFT GEN IS</h1>
-                    <h2 id="your-gen">RED</h2>
+                    <h2>RED</h2>
                     <h1>YOUR SWIFT SONG IS</h1>
-                    <h2 id="your-song">We are Never Ever Getting Back together</h2>
+                    <h2>We are Never Ever Getting Back together</h2>
                 </div>
 
                 <div id="mood">
@@ -238,18 +220,10 @@
 
             <div id="main-2" class="card">
 
-                <div id="nav-2"> 
+                <div class="nav-2">
                     <ul class="nav-pills">
-                        <li role="presentation">
-                            <button type="#button" class="btn" accesskey="z" tabindex="6">
-                                <a href="#main-1">Nav 1</a>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button type="button" class="btn" accesskey="g" tabindex="7">
-                                <a href="#main-2">Nav 2</a>
-                            </button>
-                        </li>
+                        <li role="presentation"><button type="button" class="btn"><a href="#swift-gen">Nav 1</a></button></li>
+                        <li role="presentation"><button type="button" class="btn"><a href="#top-song">Nav 2</a></button></li>
                     </ul>
                 </div>
 
@@ -261,7 +235,7 @@
                         <option value="month">Month</option>
                         <option value="all-time">All-Time</option>
                     </select>
-                    <ol id="trendlist">
+                    <ol class="trendlist">
                         <li value="1">Song 1</li>
                         <li value="2">Song 2</li>
                         <li value="3">Song 3</li>
