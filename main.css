@@ -58,12 +58,19 @@ hr{
 #swift-gen{
    height:32%;
 }
-#swift-gen h1:first-child, #top-song h1, #top-song select, #swift-gen h2:first-child{
+#top-song h1, #top-song select, #your-gen{
    left:9%;
    position:relative;
 }
+#swift-gen h1:first-child{
+   left:12%;
+   position:relative;
+}
+#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1{
+   font-family:'Philosopher', sans-serif;
+}
 #mood{
-   height:52%;
+   height:50%;
 }
 #break-up-main{
    border-bottom:none;
@@ -79,7 +86,7 @@ hr{
    border-radius:7%;
    margin:1.5%;
    margin-bottom:8%;
-   height:82%;
+   height:85%;
    width:50%;
    min-width:475px;
    left:25%;
@@ -106,8 +113,8 @@ hr{
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even), #playlist li:nth-child(even), #trendlist li:nth-child(even){
    background-color:#FA926C;
-
 }
+
 a{
    text-decoration:none;
    color:black;
