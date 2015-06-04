@@ -58,6 +58,10 @@ hr{
 #swift-gen{
    height:35%;
 }
+#swift-gen h1:first-child, #top-song h1, #top-song select, #swift-gen h2:first-child{
+   left:9%;
+   position:relative;
+}
 #mood{
    height:52%;
 }
@@ -136,7 +140,4 @@ button{
 
 }
 
-/* now the viewer of our app won't have to wait until these load.*/
-/* @krsween */
-@import url(http://fonts.googleapis.com/css?family=Marck+Script);
-@import url(http://fonts.googleapis.com/css?family=Philosopher);
+
