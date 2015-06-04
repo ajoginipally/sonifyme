@@ -66,9 +66,10 @@ hr{
    left:12%;
    position:relative;
 }
-#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1{
+#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2{
    font-family:'Philosopher', sans-serif;
 }
+
 #mood{
    height:50%;
 }
