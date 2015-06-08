@@ -99,7 +99,7 @@ to be considered centered*/
 }
 /*End nav float compensation*/
 
-#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, .playlist,#playlist, #trendlist{
+#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
    font-family:'Philosopher', sans-serif;
 }
 /*These are the rules that define a card*/
@@ -143,7 +143,7 @@ quiz questions are no longer laid out as they currently are*/
 }
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even), 
-#playlist li:nth-child(even), #trendlist li:nth-child(even), .playlist li:nth-child(even){
+#playlist li:nth-child(even), #trendlist li:nth-child(even){
 /*Zebra striping on list elements*/
    background-color:#FA926C;/*this is kind of salmon-y pink*/
 }
