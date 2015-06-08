@@ -40,7 +40,7 @@ breathing room when it is used*/
    border-bottom:none;
 }
 /*what follows are positioning for cards that are placed sequentially; if/when 
-we move to a modal, these will be removed*/
+we move to a modal or other implementation for these sections, these will be removed*/
 #quiz{
    /*top:2%;*/
 }
@@ -99,7 +99,7 @@ to be considered centered*/
 }
 /*End nav float compensation*/
 
-#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2{
+#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, .playlist,#playlist, #trendlist{
    font-family:'Philosopher', sans-serif;
 }
 /*These are the rules that define a card*/
@@ -135,10 +135,15 @@ quiz questions are no longer laid out as they currently are*/
 #nav-1 li, #nav-2 li{
    list-style-type:none;
 }
+#your-song, #break-up-main h2{
+   position:relative;
+   top:15%;
+   font-size: 1.3em;
 
+}
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even), 
-#playlist li:nth-child(even), #trendlist li:nth-child(even){
+#playlist li:nth-child(even), #trendlist li:nth-child(even), .playlist li:nth-child(even){
 /*Zebra striping on list elements*/
    background-color:#FA926C;/*this is kind of salmon-y pink*/
 }
