@@ -32,7 +32,7 @@
       $i = 0;
       echo "Quiz questions;<ol>";
       while ($row = $quiz->fetch_assoc()) {
-         echo '<li>' . $row['question'] . '  <ul> <li><input type="radio" name="quiz-'.$i.'-a" value="'.$row['aVal'].'">' . $row['a'] . '</li><li><input type="radio" name="quiz-'.$i.'-b" value="'.$row['bVal'].'">'. $row['b'] . '</li><li><input type="radio" name="quiz-'.$i.'-c" value="'.$row['cVal'].'">' . $row['c'] .'</li><li><input type="radio" name="quiz-'.$i.'-d" value="'.$row['dVal'].'">' .$row['d'].'</li></ul></li>';
+         echo '<li>' . $row['question'] . '  <ul> <li><input type="radio" name="quiz-'.$i.'" value="'.$row['aVal'].'">' . $row['a'] . '</li><li><input type="radio" name="quiz-'.$i.'" value="'.$row['bVal'].'">'. $row['b'] . '</li><li><input type="radio" name="quiz-'.$i.'" value="'.$row['cVal'].'">' . $row['c'] .'</li><li><input type="radio" name="quiz-'.$i.'" value="'.$row['dVal'].'">' .$row['d'].'</li></ul></li>';
          $i++;
       }
       echo "</ol>";
@@ -43,7 +43,7 @@
       $breakup->data_seek(0);
       echo "Breakup quiz questions:<ol>";
       while ($row = $breakup->fetch_assoc()) {
-              echo '<li>' . $row['question'] . ' <ul> <li><input type="radio" name="breakup-'.$i.'-a" value="'.$row['aVal'].'">' . $row['a'] . '</li><li><input type="radio" name="breakup-'.$i.'-b" value="'.$row['bVal'].'">'. $row['b'] . '</li><li><input type="radio" name="breakup-'.$i.'-c" value="'.$row['cVal'].'">' . $row['c'] .'</li><li><input type="radio" name="breakup-'.$i.'-d" value="'.$row['dVal'].'">' .$row['d'].'</li></ul></li>';
+              echo '<li>' . $row['question'] . ' <ul> <li><input type="radio" name="breakup-'.$i.'" value="'.$row['aVal'].'">' . $row['a'] . '</li><li><input type="radio" name="breakup-'.$i.'" value="'.$row['bVal'].'">'. $row['b'] . '</li><li><input type="radio" name="breakup-'.$i.'" value="'.$row['cVal'].'">' . $row['c'] .'</li><li><input type="radio" name="breakup-'.$i.'" value="'.$row['dVal'].'">' .$row['d'].'</li></ul></li>';
         $i++;
       }
       echo "</ol>";
