@@ -6,6 +6,12 @@
         <meta charset="UTF-8">
         <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled and minified CSS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
         <!-- TODO: @ajoginipally  -->
         <meta name="description" content="Personalized Taylor Swift info generator">
@@ -17,172 +23,200 @@
     </head>
 
     <body>
-
+        
+<div class="container-fluid">
         <!-- This is your quiz page -->
-        <form id="quiz" class="card">
-            <div id="quiz-title">
-                <h1>Taylor.sonify</h1>
-                <h2>How does swift define your life?</h2>
+        <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content card-quiz">
+                <form id="quiz" class=" col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div id="quiz-title" class="modal-header">
+                        <h1>Taylor.sonify</h1>
+                        <h2>How does swift define your life?</h2>
+                    </div>
+                    <ul id="quiz-questions" class=" col-xs-12 col-sm-10 col-sm-offset-1">
+                        <li id="quiz-question1">
+                            <h3>Question 1</h3>
+                            <input type="radio" name="quiz-quest1" value="quiz1-opt1"> Option 1
+                            <input type="radio" name="quiz-quest1" value="quiz1-opt2"> Option 2
+                            <input type="radio" name="quiz-quest1" value="quiz1-opt3"> Option 3
+                            <input type="radio" name="quiz-quest1" value="quiz1-opt4"> Option 4
+                            <input type="radio" name="quiz-quest1" value="quiz1-opt5"> Option 5
+                        </li>
+
+                        <li id="quiz-question2">
+                            <h3>Question 2</h3>
+                            <input type="radio" name="quiz-quest2" value="quiz2-opt1"> option 1
+                            <input type="radio" name="quiz-quest2" value="quiz2-opt2"> option 2
+                            <input type="radio" name="quiz-quest2" value="quiz2-opt3"> option 3
+                            <input type="radio" name="quiz-quest2" value="quiz2-opt4"> option 4
+                            <input type="radio" name="quiz-quest2" value="quiz2-opt5"> option 5
+                        </li>
+
+                        <li id="quiz-question3">
+                            <h3>Question 3</h3>
+                            <input type="radio" name="quiz-quest3" value="quiz3-opt1"> option 1
+                            <input type="radio" name="quiz-quest3" value="quiz3-opt2"> option 2
+                            <input type="radio" name="quiz-quest3" value="quiz3-opt3"> option 3
+                            <input type="radio" name="quiz-quest3" value="quiz3-opt4"> option 4
+                            <input type="radio" name="quiz-quest3" value="quiz3-opt5"> option 5
+                        </li>
+
+                        <li id="quiz-question4">
+                            <h3>Question 4</h3>
+                            <input type="radio" name="quiz-quest4" value="quiz4-opt1"> option 1
+                            <input type="radio" name="quiz-quest4" value="quiz4-opt2"> option 2
+                            <input type="radio" name="quiz-quest4" value="quiz4-opt3"> option 3
+                            <input type="radio" name="quiz-quest4" value="quiz4-opt4"> option 4
+                            <input type="radio" name="quiz-quest4" value="quiz4-opt5"> option 5
+                        </li>
+
+                        <li id="quiz-question5">
+                            <h3>Question 5</h3>
+                            <input type="radio" name="quiz-quest5" value="quiz5-opt1"> option 1
+                            <input type="radio" name="quiz-quest5" value="quiz5-opt2"> option 2
+                            <input type="radio" name="quiz-quest5" value="quiz5-opt3"> option 3
+                            <input type="radio" name="quiz-quest5" value="quiz5-opt4"> option 4
+                            <input type="radio" name="quiz-quest5" value="quiz5-opt5"> option 5
+                        </li>
+
+                        <li id="quiz-question6">
+                            <h3>Question 6</h3>
+                            <input type="radio" name="quiz-quest6" value="quiz6-opt1"> option 1
+                            <input type="radio" name="quiz-quest6" value="quiz6-opt2"> option 2
+                            <input type="radio" name="quiz-quest6" value="quiz6-opt3"> option 3
+                            <input type="radio" name="quiz-quest6" value="quiz6-opt4"> option 4
+                            <input type="radio" name="quiz-quest6" value="quiz6-opt5"> option 5
+                        </li>
+
+                        <li id="quiz-question7">
+                            <h3>Question 7</h3>
+                            <input type="radio" name="quiz-quest7" value="quiz7-opt1"> option 1
+                            <input type="radio" name="quiz-quest7" value="quiz7-opt2"> option 2
+                            <input type="radio" name="quiz-quest7" value="quiz7-opt3"> option 3
+                            <input type="radio" name="quiz-quest7" value="quiz7-opt4"> option 4
+                            <input type="radio" name="quiz-quest7" value="quiz7-opt5"> option 5
+                        </li>
+
+                        <li id="quiz-question8">
+                            <h3>Question 8</h3>
+                            <input type="radio" name="quiz-quest8" value="quiz8-opt1"> option 1
+                            <input type="radio" name="quiz-quest8" value="quiz8-opt2"> option 2
+                            <input type="radio" name="quiz-quest8" value="quiz8-opt3"> option 3
+                            <input type="radio" name="quiz-quest8" value="quiz8-opt4"> option 4
+                            <input type="radio" name="quiz-quest8" value="quiz8-opt5"> option 5
+                        </li>
+                    </ul>
+                    
+                    
+                    <!-- 
+                    <div class="col-xs-12">
+                           <div class="col-xs-5 col-xs-offset-3">
+                            <div class="progress">
+                                  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="3" style="width: 33%;">
+                                    <span class="sr-only">33% Complete</span>
+                                  </div>
+                            </div>
+                        </div>
+                        <button type="button" id="go-break" accesskey="a" tabindex="1" class="col-xs-2 col-xs-offset-1">
+                            <a href="#break-up">Next!</a>
+                        </button>
+                    </div> -->
+
+                </form>
+
+                <div class="quiz-break"></div>
+
+                <!-- this is your break up page -->
+                <form id="break-up" class=" col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                    <div id="break-title">
+                        <h1>swift.breakup</h1>
+                        <h2>Find out what song defines your break up!</h2>
+                    </div>
+
+                    <ul id="break-questions" class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <li id="break-question1">
+                            <h3>Question 1</h3>
+                            <input type="radio" name="break-quest1" value="break1-opt1"> option 1
+                            <input type="radio" name="break-quest1" value="break1-opt2"> option 2
+                            <input type="radio" name="break-quest1" value="break1-opt3"> option 3
+                            <input type="radio" name="break-quest1" value="break1-opt4"> option 4
+                            <input type="radio" name="break-quest1" value="break1-opt5"> option 5
+                        </li>
+
+                        <li id="break-question2">
+                            <h3>Question 2</h3>
+                            <input type="radio" name="break-quest2" value="break2-opt1"> option 1
+                            <input type="radio" name="break-quest2" value="break2-opt2"> option 2
+                            <input type="radio" name="break-quest2" value="break2-opt3"> option 3
+                            <input type="radio" name="break-quest2" value="break2-opt4"> option 4
+                            <input type="radio" name="break-quest2" value="break2-opt5"> option 5
+                        </li>
+
+                        <li id="break-question3">
+                            <h3>Question 3</h3>
+                            <input type="radio" name="break-quest3" value="break3-opt1"> option 1
+                            <input type="radio" name="break-quest3" value="break3-opt2"> option 2
+                            <input type="radio" name="break-quest3" value="break3-opt3"> option 3
+                            <input type="radio" name="break-quest3" value="break3-opt4"> option 4
+                            <input type="radio" name="break-quest3" value="break3-opt5"> option 5
+                        </li>
+
+                        <li id="break-question4">
+                            <h3>Question 4</h3>
+                            <input type="radio" name="break-quest4" value="break4-opt1"> option 1
+                            <input type="radio" name="break-quest4" value="break4-opt2"> option 2
+                            <input type="radio" name="break-quest4" value="break4-opt3"> option 3
+                            <input type="radio" name="break-quest4" value="break4-opt4"> option 4
+                            <input type="radio" name="break-quest4" value="break4-opt5"> option 5
+                        </li>
+
+                        <li id="break-question5">
+                            <h3>Question 5</h3>
+                            <input type="radio" name="break-quest5" value="break5-opt1"> option 1
+                            <input type="radio" name="break-quest5" value="break5-opt2"> option 2
+                            <input type="radio" name="break-quest5" value="break5-opt3"> option 3
+                            <input type="radio" name="break-quest5" value="break5-opt4"> option 4
+                            <input type="radio" name="break-quest5" value="break5-opt5"> option 5
+                        </li>
+                    </ul>
+                    <!-- TODO: ACCESSKEY and TABINDEX to all buttons -->
+
+                    <div class="col-xs-12" >
+                        <!--
+                        <div class="col-xs-5 col-xs-offset-3">
+                            <div class="progress">
+                                  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="2" aria-valuemin="1" aria-valuemax="3" style="width: 66%;">
+                                    <span class="sr-only">66% Complete</span>
+                                  </div>
+                            </div>
+                        </div> -->
+                        <button type="button" id="go-extra" accesskey="b" tabindex="2" class="col-xs-2 col-xs-offset-1" data-dismiss="modal">
+                            Sonify
+                        </button> 
+                    </div>
+                </form>
             </div>
+        </div>
+    </div>
+        
 
-            <!-- line break is temporary dont need to style -->
-            <hr>
+       <!-- <div class="break-extra"></div>
 
-            <ul id="quiz-questions">
-                <li id="quiz-question1">
-                    <h3>Question 1</h3>
-                    <input type="radio" name="quiz-quest1" value="quiz1-opt1"> Option 1
-                    <input type="radio" name="quiz-quest1" value="quiz1-opt2"> Option 2
-                    <input type="radio" name="quiz-quest1" value="quiz1-opt3"> Option 3
-                    <input type="radio" name="quiz-quest1" value="quiz1-opt4"> Option 4
-                    <input type="radio" name="quiz-quest1" value="quiz1-opt5"> Option 5
-                </li>
-
-                <li id="quiz-question2">
-                    <h3>Question 2</h3>
-                    <input type="radio" name="quiz-quest2" value="quiz2-opt1"> option 1
-                    <input type="radio" name="quiz-quest2" value="quiz2-opt2"> option 2
-                    <input type="radio" name="quiz-quest2" value="quiz2-opt3"> option 3
-                    <input type="radio" name="quiz-quest2" value="quiz2-opt4"> option 4
-                    <input type="radio" name="quiz-quest2" value="quiz2-opt5"> option 5
-                </li>
-
-                <li id="quiz-question3">
-                    <h3>Question 3</h3>
-                    <input type="radio" name="quiz-quest3" value="quiz3-opt1"> option 1
-                    <input type="radio" name="quiz-quest3" value="quiz3-opt2"> option 2
-                    <input type="radio" name="quiz-quest3" value="quiz3-opt3"> option 3
-                    <input type="radio" name="quiz-quest3" value="quiz3-opt4"> option 4
-                    <input type="radio" name="quiz-quest3" value="quiz3-opt5"> option 5
-                </li>
-
-                <li id="quiz-question4">
-                    <h3>Question 4</h3>
-                    <input type="radio" name="quiz-quest4" value="quiz4-opt1"> option 1
-                    <input type="radio" name="quiz-quest4" value="quiz4-opt2"> option 2
-                    <input type="radio" name="quiz-quest4" value="quiz4-opt3"> option 3
-                    <input type="radio" name="quiz-quest4" value="quiz4-opt4"> option 4
-                    <input type="radio" name="quiz-quest4" value="quiz4-opt5"> option 5
-                </li>
-
-                <li id="quiz-question5">
-                    <h3>Question 5</h3>
-                    <input type="radio" name="quiz-quest5" value="quiz5-opt1"> option 1
-                    <input type="radio" name="quiz-quest5" value="quiz5-opt2"> option 2
-                    <input type="radio" name="quiz-quest5" value="quiz5-opt3"> option 3
-                    <input type="radio" name="quiz-quest5" value="quiz5-opt4"> option 4
-                    <input type="radio" name="quiz-quest5" value="quiz5-opt5"> option 5
-                </li>
-
-                <li id="quiz-question6">
-                    <h3>Question 6</h3>
-                    <input type="radio" name="quiz-quest6" value="quiz6-opt1"> option 1
-                    <input type="radio" name="quiz-quest6" value="quiz6-opt2"> option 2
-                    <input type="radio" name="quiz-quest6" value="quiz6-opt3"> option 3
-                    <input type="radio" name="quiz-quest6" value="quiz6-opt4"> option 4
-                    <input type="radio" name="quiz-quest6" value="quiz6-opt5"> option 5
-                </li>
-
-                <li id="quiz-question7">
-                    <h3>Question 7</h3>
-                    <input type="radio" name="quiz-quest7" value="quiz7-opt1"> option 1
-                    <input type="radio" name="quiz-quest7" value="quiz7-opt2"> option 2
-                    <input type="radio" name="quiz-quest7" value="quiz7-opt3"> option 3
-                    <input type="radio" name="quiz-quest7" value="quiz7-opt4"> option 4
-                    <input type="radio" name="quiz-quest7" value="quiz7-opt5"> option 5
-                </li>
-
-                <li id="quiz-question8">
-                    <h3>Question 8</h3>
-                    <input type="radio" name="quiz-quest8" value="quiz8-opt1"> option 1
-                    <input type="radio" name="quiz-quest8" value="quiz8-opt2"> option 2
-                    <input type="radio" name="quiz-quest8" value="quiz8-opt3"> option 3
-                    <input type="radio" name="quiz-quest8" value="quiz8-opt4"> option 4
-                    <input type="radio" name="quiz-quest8" value="quiz8-opt5"> option 5
-                </li>
-            </ul>
-
-            <button type="button" id="go-break" accesskey="a" tabindex="1">
-                <a href="#break-up">Next!</a>
-            </button> <br>
-            <progress value="1" max="3"></progress>
-        </form>
-
-        <div class="quiz-break"></div>
-
-        <!-- this is your break up page -->
-        <form id="break-up" class="card">
-            <div id="break-title">
-                <h1>swift.breakup</h1>
-                <h2>Find out what song defines your break up!</h2>
-            </div>
-
-            <ul id="break-questions">
-                <li id="break-question1">
-                    <h3>Question 1</h3>
-                    <input type="radio" name="break-quest1" value="break1-opt1"> option 1
-                    <input type="radio" name="break-quest1" value="break1-opt2"> option 2
-                    <input type="radio" name="break-quest1" value="break1-opt3"> option 3
-                    <input type="radio" name="break-quest1" value="break1-opt4"> option 4
-                    <input type="radio" name="break-quest1" value="break1-opt5"> option 5
-                </li>
-
-                <li id="break-question2">
-                    <h3>Question 2</h3>
-                    <input type="radio" name="break-quest2" value="break2-opt1"> option 1
-                    <input type="radio" name="break-quest2" value="break2-opt2"> option 2
-                    <input type="radio" name="break-quest2" value="break2-opt3"> option 3
-                    <input type="radio" name="break-quest2" value="break2-opt4"> option 4
-                    <input type="radio" name="break-quest2" value="break2-opt5"> option 5
-                </li>
-
-                <li id="break-question3">
-                    <h3>Question 3</h3>
-                    <input type="radio" name="break-quest3" value="break3-opt1"> option 1
-                    <input type="radio" name="break-quest3" value="break3-opt2"> option 2
-                    <input type="radio" name="break-quest3" value="break3-opt3"> option 3
-                    <input type="radio" name="break-quest3" value="break3-opt4"> option 4
-                    <input type="radio" name="break-quest3" value="break3-opt5"> option 5
-                </li>
-
-                <li id="break-question4">
-                    <h3>Question 4</h3>
-                    <input type="radio" name="break-quest4" value="break4-opt1"> option 1
-                    <input type="radio" name="break-quest4" value="break4-opt2"> option 2
-                    <input type="radio" name="break-quest4" value="break4-opt3"> option 3
-                    <input type="radio" name="break-quest4" value="break4-opt4"> option 4
-                    <input type="radio" name="break-quest4" value="break4-opt5"> option 5
-                </li>
-
-                <li id="break-question5">
-                    <h3>Question 5</h3>
-                    <input type="radio" name="break-quest5" value="break5-opt1"> option 1
-                    <input type="radio" name="break-quest5" value="break5-opt2"> option 2
-                    <input type="radio" name="break-quest5" value="break5-opt3"> option 3
-                    <input type="radio" name="break-quest5" value="break5-opt4"> option 4
-                    <input type="radio" name="break-quest5" value="break5-opt5"> option 5
-                </li>
-            </ul>
-            <!-- TODO: ACCESSKEY and TABINDEX to all buttons -->
-
-            <button type="button" id="go-extra" accesskey="b" tabindex="2">
-                <a href="#extra">Next!</a>
-            </button> <br>
-            <progress value="2" max="3"></progress>
-        </form>
-
-        <div class="break-extra"></div>
-
-       <!-- This is the extra section -->
-        <form id="extra" class="card">
-            <!-- TODO: 'title' is already in use as an ID all IDs must be unique -->
+       <!-- This is the extra section
+        <form id="extra" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+            <!-- TODO: 'title' is already in use as an ID all IDs must be unique 
             <div id="extra-title">
                 <h1>Extras!</h1>
                 <h2>A couple add-ons to improve your swift experience.</h2>
             </div>
 
             <div id="questions">
-              <!-- TODO: add values to all checkboxes -->
+              <!-- TODO: add values to all checkboxes 
                 <input type="checkbox" name="theme" value="swift-theme">Would you like a personal Swift-theme?<br>
                 <input type="checkbox" name="theme" value="swift-mood">How about a mood playlist?<br>
             </div>
@@ -193,12 +227,13 @@
 
             <progress value="3" max="3"></progress>
         </form>
+        -->
 
         <div class="extra-main"></div>
 
         <!-- this is your main page. can you remove the bullets in the list using css. -->
             <!-- h2's are going to be   your dummies -->
-            <div id="main-1" class="card">
+            <div id="main-1" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
 
                 <div id="nav-1">
                     <ul class="nav-pills">
@@ -226,7 +261,7 @@
                     <h1>MOOD</h1>
                     <h2>SAD</h2>
                     <h1>PLAYLIST</h1>
-                    <ol class="playlist">
+                    <ol id="playlist" class="col-xs-12 col-sm-10 col-sm-offset-1">
                         <li value="1">Song 1</li>
                         <li value="2">Song 2</li>
                         <li value="3">Song 3</li>
@@ -236,7 +271,7 @@
                 </div>
             </div>
 
-            <div id="main-2" class="card">
+            <div id="main-2" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
 
                 <div id="nav-2"> 
                     <ul class="nav-pills">
@@ -255,18 +290,18 @@
 
                 <form id="top-song">
                     <h1>TRENDING</h1>
-                    <select>
-                        <option value="today">Today</option>
-                        <option value="week">Week</option>
-                        <option value="month">Month</option>
-                        <option value="all-time">All-Time</option>
-                    </select>
-                    <ol id="trendlist">
-                        <li value="1">Song 1</li>
-                        <li value="2">Song 2</li>
-                        <li value="3">Song 3</li>
-                        <li value="4">Song 4</li>
-                        <li value="5">Song 5</li>
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default active">Today</button>
+                      <button type="button" class="btn btn-default">Week</button>
+                      <button type="button" class="btn btn-default">Month</button>
+                      <button type="button" class="btn btn-default">All-Time</button>
+                    </div>
+                    <ol id="trendlist" class="col-xs-12 col-sm-10 col-sm-offset-1 list-group">
+                        <li value="1" class="list-group-item">Song 1</li>
+                        <li value="2" class="list-group-item">Song 2</li>
+                        <li value="3" class="list-group-item">Song 3</li>
+                        <li value="4" class="list-group-item">Song 4</li>
+                        <li value="5" class="list-group-item">Song 5</li>
                     </ol>
                 </form>
 
@@ -276,6 +311,6 @@
                 </div>
             </div>
 
-
+        </div>
     </body>
 </html>

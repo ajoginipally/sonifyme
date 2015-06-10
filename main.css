@@ -1,10 +1,14 @@
 body{
+/*hidden overflow makes it so that we only see one .card at a time*/
    overflow:hidden;
    font-family: 'Marck Script', cursive;
-   background-color:rgba(21, 10, 10, 0.77);
+   background-image: url("images/pinkballoon.jpg");
+   background-repeat: no-repeat;
+   height: 100%;
+    
 }
 h1{
-   font-size:1.5em;
+   font-size:2em;
    margin:1%;
    color:#AD0505;
 }
@@ -16,90 +20,121 @@ h3{
    font-size:.9em;
    margin:.7%;
 }
-hr{
+
+hr{/* not sure the hr is necessary, but this margin gets us some extra 
+breathing room when it is used*/
    margin:.7%;
 }
 
 #quiz-questions li, #break-questions li{
    list-style-type:none;
    /*border-bottom:1px solid gray;*/
+   /*do we want the border or not? commented out for now*/
    margin:1.7%;
    font-family:'Philosopher', sans-serif;
 }
 #quiz-questions, #break-questions{
+   /*Gets us some breathing room between questions */
    margin-top:2px;
-   padding-left:5%;
+   /* padding-left:3%; */
 }
 #quiz-questions li:last-child, #break-questions li:last-child{
+/*eliminates trailing border on last questions*/
    border-bottom:none;
 }
+/*what follows are positioning for cards that are placed sequentially; if/when 
+we move to a modal or other implementation for these sections, these will be removed*/
 #quiz{
-   top:2%;
+   /*top:2%;*/
 }
-#break-up{
+/#break-up{
    top:105%;
 }
 #extra{
    top:210%;
 }
-#main-1{
+/*#main-1{
    top:325%;
-}
+} */
 #main-2{
-   top:430%;
-}
-#swift-gen, #top-song{
+   top:200%;
+   
+} 
+/*end sequential card placement*/
+
+/*#swift-gen, #top-song{
    border-bottom:1px solid gray;
-}
+}*/
 #swift-gen, #mood, #top-song, #break-up-main{
+/*These nudge elements around in the main section to keep them from 
+a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
+next few rules also do this.*/
    height:40%;
    margin:5%;
 }
 #swift-gen{
    height:32%;
 }
+#mood{
+   height:50%;
+}
+
+#break-up-main{
+   border-bottom:none;
+   height:40%
+}
+/*end section positioning*/
+
+#go-break, #go-extra, #go-main{
+/*position advancement buttons for consistency*/
+   position:absolute;
+   right:6%;
+   bottom:2%;
+}
+/*To follow: keep the nav's float from pushing these over too far to the left 
+to be considered centered*/
 #top-song h1, #top-song select, #your-gen{
-   left:9%;
+   left:12%;
    position:relative;
 }
 #swift-gen h1:first-child{
    left:12%;
    position:relative;
 }
-#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2{
+/*End nav float compensation*/
+
+#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
    font-family:'Philosopher', sans-serif;
 }
-
-#mood{
-   height:50%;
-}
-#break-up-main{
-   border-bottom:none;
-   height:40%
-}
-#go-break, #go-extra, #go-main{
-   position:absolute;
-   right:6%;
-   bottom:2%;
-}
-
+/*These are the rules that define a card*/
 .card{
    border-radius:7%;
-   margin:1.5%;
-   margin-bottom:8%;
-   height:85%;
-   width:50%;
+   /*margin:1.5%;
+   margin-bottom:4%;
+   margin-top:2%; */
+   height:97%;
+   /* width:50%; 
    min-width:475px;
-   left:25%;
-   padding:2%;
-   position:absolute;
-   display:block;
+   /* left:25%; */
+   /* padding:2%; */
+   position:absolute; 
+   /* display:block; */
    text-align:center;
-   background-color: #fff1a9;
+   /* background-color: #FFEC8F; /* Beige*/
    overflow-y:auto;
    overflow-x:hidden;
-   padding-right:5%;
+   /* padding-right:5%; */
 }
+
+.card-quiz{
+    text-align: center;
+    background-color: #FFEC8F;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+/*The two following rules float the two nav buttons to the right and positions
+them properly in each main section card. This will need adjustment once all the
+quiz questions are no longer laid out as they currently are*/
 #nav-1, #nav-2{
    z-index:2;
    top:5%;
@@ -111,39 +146,79 @@ hr{
 #nav-1 li, #nav-2 li{
    list-style-type:none;
 }
+#your-song, #break-up-main h2{
+   position:relative;
+   top:15%;
+   font-size: 1.3em;
 
-#quiz-questions li:nth-child(even), #break-questions li:nth-child(even), #playlist li:nth-child(even), #trendlist li:nth-child(even){
-   background-color:#FA926C;
 }
 
+#quiz-questions li:nth-child(even), #break-questions li:nth-child(even), 
+#playlist li:nth-child(even), #trendlist li:nth-child(even){
+/*Zebra striping on list elements*/
+   background-color:#FA926C;/*this is kind of salmon-y pink*/
+}
+#playlist li:nth-child(odd), #trendlist li:nth-child(odd){
+     background-color: #FFEC8F; /* Beige*/
+}
 a{
    text-decoration:none;
-   color:black;
+   /*color:black;*/
    font-weight:bold;
    font-family: 'Philosopher', sans-serif;
 }
 
-progress{
+/* progress{
+/*position the progress bar so it remains consistently at the bottom of each 
+quiz section. May need more styling for aesthetic reasons later
    position:absolute;
    bottom:2%;
    right:27%;
-}
-button{
-   background-color:rgba(255, 255, 255, 0.42);
+} */
+
+ button{
+/*button styling. Needs different/more future styling*/
+   background-color:#fff1ba; /*rgba(255, 255, 255, 0.42);*/
    border-radius:18px;
    padding:1%;
    padding-left:2%;
    padding-right:2%;
-
+   color:#E92525;
+   border:2px solid #ff4c4c;
 }
+ button:hover{
+   background-color:#ff4c4c;/*pink*/
+}
+ button a:link{
+   color:#E92525; /*pink*/
+}
+ button a:visited{
+   color:#E92525; /*pink*/
+}
+ button a:hover{
+   color:#fff1ba; /*beige*/
+}
+ button a:active{
+   color:#AD0505;/*vivid, dark red*/
+}
+ button a:focus{
+   background-color:#ff4c4c;/*pink*/
+   color:#fff1ba; /*beige*/
+} 
+
+/*smaller screen rules*/
 @media (max-width:768px){
-
    .card{
-      width:90%;
-      left:0%;
-      height:92%;
+      /* width:90%;
+      /* left:0%; */
+      
+      min-width:285px;
+      /*overflow-y:hidden;*/
+/*overflow used here only for testing without scrollbar getting in the way*/
    }
-
+    .container-fluid{
+        padding-left:0%;   
+    }
 }
 
 
