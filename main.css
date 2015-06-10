@@ -1,20 +1,22 @@
 body{
 /*hidden overflow makes it so that we only see one .card at a time*/
-   overflow:hidden;
+   overflow-x:hidden;
    font-family: 'Marck Script', cursive;
-   background-image: url("images/pinkballoon.jpg");
    background-repeat: no-repeat;
-   height: 100%;
-    
+    background-image: url("images/manhattan.jpg");
+   height: 100%;   
 }
+
 h1{
-   font-size:2em;
+   font-size:3em;
    margin:1%;
-   color:#AD0505;
+   color:white;
+    text-shadow: .1em .1em 0em rgba(0,0,0,0.2);
 }
 h2{
    font-size:1.1em;
    margin:.7%;
+    color: white;
 }
 h3{
    font-size:.9em;
@@ -53,9 +55,9 @@ we move to a modal or other implementation for these sections, these will be rem
 #extra{
    top:210%;
 }
-/*#main-1{
-   top:325%;
-} */
+#main-1{
+   
+} 
 #main-2{
    top:200%;
    
@@ -85,26 +87,25 @@ next few rules also do this.*/
 }
 /*end section positioning*/
 
-#go-break, #go-extra, #go-main{
-/*position advancement buttons for consistency*/
+/* #go-break, #go-extra, #go-main{
+/*position advancement buttons for consistency
    position:absolute;
    right:6%;
    bottom:2%;
-}
+} */
+
 /*To follow: keep the nav's float from pushing these over too far to the left 
 to be considered centered*/
-#top-song h1, #top-song select, #your-gen{
-   left:12%;
+#top-song h1, #top-song select, #your-gen{ 
    position:relative;
 }
 #swift-gen h1:first-child{
-   left:12%;
    position:relative;
 }
 /*End nav float compensation*/
 
 #swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
-   font-family:'Philosopher', sans-serif;
+   font-family: 'Lobster', cursive;
 }
 /*These are the rules that define a card*/
 .card{
@@ -120,7 +121,7 @@ to be considered centered*/
    position:absolute; 
    /* display:block; */
    text-align:center;
-   /* background-color: #FFEC8F; /* Beige*/
+   background-color: rgba(0, 0, 0, 0.2); /* Beige*/
    overflow-y:auto;
    overflow-x:hidden;
    /* padding-right:5%; */
@@ -177,40 +178,40 @@ quiz section. May need more styling for aesthetic reasons later
 } */
 
  button{
-/*button styling. Needs different/more future styling*/
-   background-color:#fff1ba; /*rgba(255, 255, 255, 0.42);*/
-   border-radius:18px;
-   padding:1%;
+/*button styling. Needs different/more future styling */
+   /*background-color:#fff1ba; /*rgba(255, 255, 255, 0.42); */
+  /* border-radius:18px;*/
+  /* padding:1%;
    padding-left:2%;
    padding-right:2%;
    color:#E92525;
-   border:2px solid #ff4c4c;
-}
+   /* border:2px solid #ff4c4c; */ 
+} 
  button:hover{
-   background-color:#ff4c4c;/*pink*/
+  /* background-color:#ff4c4c;/*pink*/
 }
  button a:link{
-   color:#E92525; /*pink*/
+   /* color:#E92525; /*pink*/
 }
  button a:visited{
-   color:#E92525; /*pink*/
+   /* color:#E92525; /*pink*/
 }
  button a:hover{
-   color:#fff1ba; /*beige*/
+   /* color:#fff1ba; /*beige*/
 }
  button a:active{
-   color:#AD0505;/*vivid, dark red*/
+    /*color:#AD0505;/*vivid, dark red*/
 }
  button a:focus{
-   background-color:#ff4c4c;/*pink*/
-   color:#fff1ba; /*beige*/
+   /* background-color:#ff4c4c;/*pink*/
+   /* color:#fff1ba; /*beige*/
 } 
 
 /*smaller screen rules*/
-@media (max-width:768px){
+/*@media (max-width:768px){
    .card{
       /* width:90%;
-      /* left:0%; */
+      /* left:0%; 
       
       min-width:285px;
       /*overflow-y:hidden;*/
@@ -219,6 +220,11 @@ quiz section. May need more styling for aesthetic reasons later
     .container-fluid{
         padding-left:0%;   
     }
+#gen {
+    color: #ed6464;
+}
+#song {
+    color: cornflowerblue;
 }
 
 
