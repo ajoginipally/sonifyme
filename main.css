@@ -58,12 +58,11 @@ we move to a modal or other implementation for these sections, these will be rem
 } */
 #main-2{
    top:200%;
-   
 } 
 /*end sequential card placement*/
 
 /*#swift-gen, #top-song{
-   border-bottom:1px solid gray;
+    border-bottom:1px solid gray;
 }*/
 #swift-gen, #mood, #top-song, #break-up-main{
 /*These nudge elements around in the main section to keep them from 
@@ -103,6 +102,7 @@ to be considered centered*/
 }
 /*End nav float compensation*/
 
+
 #swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
    font-family:'Philosopher', sans-serif;
 }
@@ -132,6 +132,7 @@ to be considered centered*/
     overflow-y:auto;
     overflow-x:hidden;
 }
+
 /*The two following rules float the two nav buttons to the right and positions
 them properly in each main section card. This will need adjustment once all the
 quiz questions are no longer laid out as they currently are*/
@@ -150,7 +151,6 @@ quiz questions are no longer laid out as they currently are*/
    position:relative;
    top:15%;
    font-size: 1.3em;
-
 }
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even), 
@@ -183,6 +183,7 @@ quiz section. May need more styling for aesthetic reasons later
    padding:1%;
    padding-left:2%;
    padding-right:2%;
+
    color:#E92525;
    border:2px solid #ff4c4c;
 }
@@ -211,11 +212,11 @@ quiz section. May need more styling for aesthetic reasons later
    .card{
       /* width:90%;
       /* left:0%; */
-      
       min-width:285px;
       /*overflow-y:hidden;*/
 /*overflow used here only for testing without scrollbar getting in the way*/
    }
+
     .container-fluid{
         padding-left:0%;   
     }
