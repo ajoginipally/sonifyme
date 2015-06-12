@@ -6,6 +6,11 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+.modal{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+
 #song-mod {
     font-family: 'Raleway', sans-serif;
 }
