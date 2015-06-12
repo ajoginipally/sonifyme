@@ -30,7 +30,7 @@
       $quiz = $mysqli->query("SELECT DISTINCT * FROM ts_questions ORDER BY RAND() LIMIT 8");
       $quiz->data_seek(0);
       $i = 0;
-      echo "Quiz questions;<ol>";
+      echo "Quiz questions:<ol>";
       while ($row = $quiz->fetch_assoc()) {
          echo '<li>' . $row['question'] . '  <ul> <li><input type="radio" name="quiz-'.$i.'" value="'.$row['aVal'].'">' . $row['a'] . '</li><li><input type="radio" name="quiz-'.$i.'" value="'.$row['bVal'].'">'. $row['b'] . '</li><li><input type="radio" name="quiz-'.$i.'" value="'.$row['cVal'].'">' . $row['c'] .'</li><li><input type="radio" name="quiz-'.$i.'" value="'.$row['dVal'].'">' .$row['d'].'</li></ul></li>';
          $i++;

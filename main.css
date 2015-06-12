@@ -3,13 +3,14 @@ body{
    overflow-x:hidden;
    font-family: 'Marck Script', cursive;
    height: 100%;   
+  
 }
 
 h1{
    font-size:3em;
    margin:3%;
    color:white;
-    text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
+   text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
 h2{
    
@@ -35,17 +36,6 @@ breathing room when it is used*/
 /*eliminates trailing border on last questions*/
    border-bottom:none;
 }
-/*what follows are positioning for cards that are placed sequentially; if/when 
-we move to a modal or other implementation for these sections, these will be removed*/
-#quiz{
-   /*top:2%;*/
-}
-
-/*end sequential card placement*/
-
-/*#swift-gen, #top-song{
-   border-bottom:1px solid gray;
-}*/
 #swift-gen, #mood, #top-song, #break-up-main{
 /*These nudge elements around in the main section to keep them from 
 a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
@@ -67,13 +57,6 @@ next few rules also do this.*/
 }
 /*end section positioning*/
 
-/* #go-break, #go-extra, #go-main{
-/*position advancement buttons for consistency
-   position:absolute;
-   right:6%;
-   bottom:2%;
-} */
-
 /*To follow: keep the nav's float from pushing these over too far to the left 
 to be considered centered*/
 #top-song h1, #top-song select, #your-gen{ 
@@ -88,25 +71,18 @@ to be considered centered*/
    font-family: 'Raleway', sans-serif;
 }
 #trendlist {
-    top: 3vh;
+   top: 3vh;
 }
 /*These are the rules that define a card*/
 .card{
-   /*border-radius:7%;
-   /*margin:1.5%;
-   margin-bottom:4%;
-   margin-top:2%; */
    height:97%;
-   /* width:50%; 
-   min-width:475px;
-   /* left:25%; */
-   /* padding:2%; */ 
-   /* display:block; */
    text-align:center;
-    /* Beige*/
    overflow-y:auto;
    overflow-x:hidden;
-   /* padding-right:5%; */
+   
+   background-color:rgba(150,150,150,.1);
+   border-radius:18px;
+
 }
 
 .card-quiz{
@@ -132,85 +108,41 @@ quiz questions are no longer laid out as they currently are*/
 
 a{
    text-decoration:none;
-   /*color:black;*/
    font-weight:bold;
    font-family: 'Philosopher', sans-serif;
 }
-
-/* progress{
-/*position the progress bar so it remains consistently at the bottom of each 
-quiz section. May need more styling for aesthetic reasons later
-   position:absolute;
-   bottom:2%;
-   right:27%;
-} */
-
- button{
-/*button styling. Needs different/more future styling */
-   /*background-color:#fff1ba; /*rgba(255, 255, 255, 0.42); */
-  /* border-radius:18px;*/
-  /* padding:1%;
-   padding-left:2%;
-   padding-right:2%;
-   color:#E92525;
-   /* border:2px solid #ff4c4c; */ 
-} 
- button:hover{
-  /* background-color:#ff4c4c;/*pink*/
-}
- button a:link{
-   /* color:#E92525; /*pink*/
-}
- button a:visited{
-   /* color:#E92525; /*pink*/
-}
- button a:hover{
-   /* color:#fff1ba; /*beige*/
-}
- button a:active{
-    /*color:#AD0505;/*vivid, dark red*/
-}
- button a:focus{
-   /* background-color:#ff4c4c;/*pink*/
-   /* color:#fff1ba; /*beige*/
-} 
-
-/*smaller screen rules*/
-/*@media (max-width:768px){
-   .card{
-      /* width:90%;
-      /* left:0%; 
-      
-      min-width:285px;
-      /*overflow-y:hidden;*/
-/*overflow used here only for testing without scrollbar getting in the way*/
-   }
 
 .container-fluid{
         padding: 0;
     }
 
-
 #page-1 {
     height: 100vh;
     width: 100%;
-    background: url("images/pink-city.jpg") fixed;
+    background: url("images/city.jpg") fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position:fixed;
+    z-index:-2;
+    animation: fadeIn 4s linear forwards;
+   -webkit-animation: fadeIn 4s linear forwards;
     
 }
 
 #page-2 {
+   top:100%;
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    background-image: url("images/city.jpg");
+    background-image: url("images/pink-city.jpg");
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+       animation: fadeIn 3s ease forwards;
+   -webkit-animation: fadeIn 3s ease forwards;
     
 }
 
@@ -231,86 +163,172 @@ quiz section. May need more styling for aesthetic reasons later
 }
 
 #swift-gen mark {
-    color: #d65656;
-    background: transparent;
-    font-weight: 800;
-    font-family: 'Raleway', sans-serif;
+   color: #d65656;
+   background: transparent;
+   font-weight: 800;
+   font-family: 'Raleway', sans-serif;
 }
 
 #mood h1 {
-    font-size: 4.5vh;
-    margin-bottom: 3vh;
-    color: #779ECB;
+   font-size: 4.5vh;
+   margin-bottom: 3vh;
+   color: #779ECB;
 }
 
 #mood h2 {
-    font-size: 3vh;
-    font-family: 'Abel', sans-serif;
+   font-size: 3vh;
+   font-family: 'Abel', sans-serif;
 }
 
 #main-1 {
-    background-color: rgba(0,0,0,.2);
-    height: 100%
+   margin-top:10%;
+   background-color: rgba(0,0,0,.2);
+   height: 100%;
+   position:relative;
+   z-index:3;
 }
 
 #main-2 {
-    background-color: rgba(0,0,0,.2);
-    height: 100%
+   background-color: rgba(0,0,0,.2);
+   height: 100%;
+   position:relative;
+   margin-top:15%;
+   margin-bottom:15%;
 }
 
 #top-song h1 {
-    font-size: 5vh;
-    color: #70a39c;
+   font-size: 5vh;
+   color: #70a39c;
 }
 
 #break-up-main h1{
-    font-size: 5vh;
-    color: #70a39c;
+   font-size: 5vh;
+   color: #70a39c;
 }
 
 #break-up-main mark{
-    background: transparent;
-    color: #ffa741;
-    font-weight: 800;
+   background: transparent;
+   color: #ffa741;
+   font-weight: 800;
 }
 
 #break-up-main h2 {
-    font-size: 3vh;
-    font-family: 'Abel', sans-serif;
+   font-size: 3vh;
+   font-family: 'Abel', sans-serif;
 }
 
-#quiz-questions li:nth-child(even), #break-questions li:nth-child(even), 
-#playlist li:nth-child(even){
+#quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
 /*Zebra striping on list elements*/
    background-color:rgba(233, 37, 37, 0.17);/*this is kind of salmon-y pink*/
 }
 
+#trendlist li{
+   color: white;
+}
+
 #trendlist li:nth-child(even){
-    background-color: rgba(255, 167, 65, 0.29);
-    color: white;
+   background-color: rgba(255, 167, 65, 0.29);
 }
 
-#trendlist li:nth-child(odd){
-    color: white;
+
+
+#playlist li{
+   color: white;   
+   list-style-type: none;
 }
 
-#playlist li:nth-child(odd){
-     color: white;
-    list-style: none;
-}
 
 #playlist li:nth-child(even){
-     background-color: color: rgba(112, 163, 156, 0.32);
-     color: white;
-    list-style: none;
+   background-color: color: rgba(112, 163, 156, 0.32);
 }
 
 #top-song {
-    height: 40%
+   height: 40%
 }
 
 .btn-group {
-    font-family: 'Raleway', sans-serif;
+   font-family: 'Raleway', sans-serif;
+}
+
+.collapsing{
+   transition-duration:0s;
+   -o-transition-duration:0s;
+   -webkit-transition-duration:0s;
+   webkit-transition-timing-function: ease;
+   -o-transition-timing-function: ease;
+   transition-timing-function: ease;
+   display:none;
+}
+
+a.list-group-item:hover{
+   cursor:default;
+}
+.list-group-item{
+   background-color:transparent;
+}
+.list-group-item:nth-child(even){
+   background-color:#fff2ff;
+   background-opacity:.2;
+  
+}
+
+.btn{
+   border-width:0 1px 4px 1px;
+   text-transform:small-caps;
+   border-radius:5px;
+}    
+.btn:hover, .btn.active, .btn:active, .btn:focus{
+   margin-top: 3px;
+   padding-bottom:4px;
+   border-bottom-width: 3px;
+   margin-bottom:0;
+}
+
+.btn-lg:hover, .btn-lg.active, .btn-lg:active, .btn-lg:focus{
+   margin-top: 2px;
+   padding-bottom:7px;
+   border-bottom-width: 5px;
+   margin-bottom:0;
+}
+
+button .btn {
+   text-transform:small-caps!important;
+}
+#launcher{
+   position:absolute; 
+   top:45%;
+}
+
+#main{
+   background-color:rgb(0, 0, 31);
+   z-index:2;
+   animation: fadeIn .2s linear forwards;
+   -webkit-animation: myFadeIn .2s linear forwards;
+}
+
+#sharingIsProbablyNotCaring{
+   position:fixed;
+   top:10%;
+   right:2%;
+   z-index:3;
+   height:10%;
+   border:1px solid lavender;
+}
+@-webkit-keyframes fadeIn{
+   from{
+      opacity:0;
+   }
+   to{
+      opacity:1;
+   }
+}
+@keyframes myFadeIn{
+   from{
+      opacity:0;
+   }
+   to{
+      opacity:1;
+   }
 }
     
 
