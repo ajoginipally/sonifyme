@@ -1,10 +1,13 @@
 body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
-   font-family: 'Marck Script', cursive;
    height: 100%;
    background-color: rgb(166,32,69);
-  
+    font-family: 'Raleway', sans-serif;
+}
+
+#modal-main{
+
 }
 
 
