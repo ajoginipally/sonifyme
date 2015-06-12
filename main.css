@@ -2,8 +2,15 @@ body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
    font-family: 'Marck Script', cursive;
-   height: 100%;   
+   height: 100%;
+   background-color: rgb(166,32,69);
   
+}
+
+
+
+#song-mod {
+    font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -30,12 +37,30 @@ breathing room when it is used*/
 #quiz-questions, #break-questions{
    /*Gets us some breathing room between questions */
    margin-top:2px;
+    list-style: none;
+    padding-left: 0;
+    color: #ebebeb;
+    font-family: 'Abel', sans-serif;
    /* padding-left:3%; */
 }
 #quiz-questions li:last-child, #break-questions li:last-child{
 /*eliminates trailing border on last questions*/
    border-bottom:none;
 }
+
+#quiz-title h1, #break-title h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #ebebeb;
+    font-weight: 100;
+}
+
+#quiz-title h2, #break-title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #d9534f;
+    text-shadow: .07em .07em 0em #6d211f;
+}
+
 #swift-gen, #mood, #top-song, #break-up-main{
 /*These nudge elements around in the main section to keep them from 
 a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
@@ -87,7 +112,7 @@ to be considered centered*/
 
 .card-quiz{
     text-align: center;
-    background-color: #FFEC8F;
+    background-color: #2b3e50;
     overflow-y:auto;
     overflow-x:hidden;
 }
@@ -102,8 +127,7 @@ a{
     }
 
 #page-1 {
-    height: 115vh;
-    
+    height: 100vh;
     width: 105%; 
     background: url("images/city.jpg") fixed;
     -webkit-background-size: cover;
@@ -123,11 +147,11 @@ a{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     background-image: url("images/pink-city.jpg");
-        -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-       animation: fadeIn 3s ease forwards;
+    animation: fadeIn 3s ease forwards;
    -webkit-animation: fadeIn 3s ease forwards;
     
 }
@@ -140,7 +164,7 @@ a{
 #swift-gen h1 {
     font-size: 5vh;
     margin-bottom: 3vh;
-    color: #779ECB;
+    color: #87b6eb;
 }
 
 #swift-gen h2 {
@@ -206,7 +230,7 @@ a{
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
 /*Zebra striping on list elements*/
-   background-color:rgba(233, 37, 37, 0.17);/*this is kind of salmon-y pink*/
+    background-color: #4e5d6c;
 }
 
 #trendlist li{
@@ -284,6 +308,7 @@ button .btn {
 #launcher{
    position:absolute; 
    top:45%;
+    left: 4%;
 }
 
 #main{

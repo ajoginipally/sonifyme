@@ -26,7 +26,7 @@
         <!-- This is your quiz page -->
 <!-- Button trigger modal -->
    <button type="button" id = "launcher" class="btn btn-warning btn-lg col-xs-3 col-xs-offset-4 collapse in" data-toggle="modal" data-target="#myModal-1">
-      <span class="hidden-xs hidden-sm">What song do you Sonify?</span><span class = "visible-xs visible-sm">Start</span>
+      <span id="song-mod" class="hidden-xs hidden-sm">What song do you Sonify?</span><span id="song-mod" class = "visible-xs visible-sm">Start</span>
    </button>
     <!-- Modal -->
     <div id="myModal-1" class="modal fade" role="dialog">
@@ -45,7 +45,6 @@
                             <input type="radio" name="quiz-quest1" value="quiz1-opt2"> Option 2
                             <input type="radio" name="quiz-quest1" value="quiz1-opt3"> Option 3
                             <input type="radio" name="quiz-quest1" value="quiz1-opt4"> Option 4
-                            <input type="radio" name="quiz-quest1" value="quiz1-opt5"> Option 5
                         </li>
 
                         <li id="quiz-question2">
@@ -54,7 +53,6 @@
                             <input type="radio" name="quiz-quest2" value="quiz2-opt2"> option 2
                             <input type="radio" name="quiz-quest2" value="quiz2-opt3"> option 3
                             <input type="radio" name="quiz-quest2" value="quiz2-opt4"> option 4
-                            <input type="radio" name="quiz-quest2" value="quiz2-opt5"> option 5
                         </li>
 
                         <li id="quiz-question3">
@@ -63,7 +61,6 @@
                             <input type="radio" name="quiz-quest3" value="quiz3-opt2"> option 2
                             <input type="radio" name="quiz-quest3" value="quiz3-opt3"> option 3
                             <input type="radio" name="quiz-quest3" value="quiz3-opt4"> option 4
-                            <input type="radio" name="quiz-quest3" value="quiz3-opt5"> option 5
                         </li>
 
                         <li id="quiz-question4">
@@ -72,7 +69,6 @@
                             <input type="radio" name="quiz-quest4" value="quiz4-opt2"> option 2
                             <input type="radio" name="quiz-quest4" value="quiz4-opt3"> option 3
                             <input type="radio" name="quiz-quest4" value="quiz4-opt4"> option 4
-                            <input type="radio" name="quiz-quest4" value="quiz4-opt5"> option 5
                         </li>
 
                         <li id="quiz-question5">
@@ -81,7 +77,6 @@
                             <input type="radio" name="quiz-quest5" value="quiz5-opt2"> option 2
                             <input type="radio" name="quiz-quest5" value="quiz5-opt3"> option 3
                             <input type="radio" name="quiz-quest5" value="quiz5-opt4"> option 4
-                            <input type="radio" name="quiz-quest5" value="quiz5-opt5"> option 5
                         </li>
 
                         <li id="quiz-question6">
@@ -90,7 +85,6 @@
                             <input type="radio" name="quiz-quest6" value="quiz6-opt2"> option 2
                             <input type="radio" name="quiz-quest6" value="quiz6-opt3"> option 3
                             <input type="radio" name="quiz-quest6" value="quiz6-opt4"> option 4
-                            <input type="radio" name="quiz-quest6" value="quiz6-opt5"> option 5
                         </li>
 
                         <li id="quiz-question7">
@@ -99,7 +93,6 @@
                             <input type="radio" name="quiz-quest7" value="quiz7-opt2"> option 2
                             <input type="radio" name="quiz-quest7" value="quiz7-opt3"> option 3
                             <input type="radio" name="quiz-quest7" value="quiz7-opt4"> option 4
-                            <input type="radio" name="quiz-quest7" value="quiz7-opt5"> option 5
                         </li>
 
                         <li id="quiz-question8">
@@ -108,11 +101,10 @@
                             <input type="radio" name="quiz-quest8" value="quiz8-opt2"> option 2
                             <input type="radio" name="quiz-quest8" value="quiz8-opt3"> option 3
                             <input type="radio" name="quiz-quest8" value="quiz8-opt4"> option 4
-                            <input type="radio" name="quiz-quest8" value="quiz8-opt5"> option 5
                         </li>
                     </ul>
                     
-                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModal-2">Next</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#myModal-2">Next</button>
 
                 </form>
             </div>
@@ -139,7 +131,6 @@
                             <input type="radio" name="break-quest1" value="break1-opt2"> option 2
                             <input type="radio" name="break-quest1" value="break1-opt3"> option 3
                             <input type="radio" name="break-quest1" value="break1-opt4"> option 4
-                            <input type="radio" name="break-quest1" value="break1-opt5"> option 5
                         </li>
 
                         <li id="break-question2">
@@ -148,7 +139,6 @@
                             <input type="radio" name="break-quest2" value="break2-opt2"> option 2
                             <input type="radio" name="break-quest2" value="break2-opt3"> option 3
                             <input type="radio" name="break-quest2" value="break2-opt4"> option 4
-                            <input type="radio" name="break-quest2" value="break2-opt5"> option 5
                         </li>
 
                         <li id="break-question3">
@@ -157,7 +147,6 @@
                             <input type="radio" name="break-quest3" value="break3-opt2"> option 2
                             <input type="radio" name="break-quest3" value="break3-opt3"> option 3
                             <input type="radio" name="break-quest3" value="break3-opt4"> option 4
-                            <input type="radio" name="break-quest3" value="break3-opt5"> option 5
                         </li>
 
                         <li id="break-question4">
@@ -166,7 +155,6 @@
                             <input type="radio" name="break-quest4" value="break4-opt2"> option 2
                             <input type="radio" name="break-quest4" value="break4-opt3"> option 3
                             <input type="radio" name="break-quest4" value="break4-opt4"> option 4
-                            <input type="radio" name="break-quest4" value="break4-opt5"> option 5
                         </li>
 
                         <li id="break-question5">
@@ -175,7 +163,6 @@
                             <input type="radio" name="break-quest5" value="break5-opt2"> option 2
                             <input type="radio" name="break-quest5" value="break5-opt3"> option 3
                             <input type="radio" name="break-quest5" value="break5-opt4"> option 4
-                            <input type="radio" name="break-quest5" value="break5-opt5"> option 5
                         </li>
                     </ul>
                     <input type="submit" value ="Sonify!"class="btn btn-danger" accesskey="b" tabindex="2" data-dismiss="modal" data-toggle="collapse" data-target="#main, #launcher, #page-1">
