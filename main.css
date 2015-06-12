@@ -1,10 +1,9 @@
 body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
-   font-family: 'Marck Script', cursive;
+   font-family: 'Raleway', sans-serif;
    height: 100%;
-   background-color: rgb(166,32,69);
-  
+   background-color: rgb(166,32,69); 
 }
 
 
