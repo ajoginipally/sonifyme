@@ -7,13 +7,11 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:500,400,600,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
         <!-- Latest compiled and minified CSS -->
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">-->
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-        <!-- TODO: @ajoginipally  -->
         <meta name="description" content="Personalized Taylor Swift info generator">
         <meta name="keywords" content="Taylor Swift, Quiz, Break-up, Mood, Red, Speak Now, 1989, Fearless">
         <meta name="author" content="Abhi Joginipally, Susan Souza, Kameron Sween">
@@ -26,19 +24,21 @@
         
 <div class="container-fluid">
         <!-- This is your quiz page -->
-        <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal-1">Open Modal</button>
+<!-- Button trigger modal -->
+   <button type="button" id = "launcher" class="btn btn-warning btn-lg col-xs-3 col-xs-offset-4 collapse in" data-toggle="modal" data-target="#myModal-1">
+      <span class="hidden-xs hidden-sm">What song do you Sonify?</span><span class = "visible-xs visible-sm">Start</span>
+   </button>
     <!-- Modal -->
     <div id="myModal-1" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content card-quiz">
-                <form id="quiz" class=" col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <form id="quiz" class=" col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div id="quiz-title" class="modal-header">
                         <h1>Taylor.sonify</h1>
                         <h2>How does swift define your life?</h2>
                     </div>
-                    <ul id="quiz-questions" class=" col-xs-12 col-sm-10 col-sm-offset-1">
+                    <ul id="quiz-questions">
                         <li id="quiz-question1">
                             <h3>Question 1</h3>
                             <input type="radio" name="quiz-quest1" value="quiz1-opt1"> Option 1
@@ -119,14 +119,14 @@
         </div>
     </div>
     
-    <div id="myModal-2" class="modal fade" role="dialog">
+    <div id="myModal-2" class="modal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content card-quiz">
                 <div class="quiz-break"></div>
 
                 <!-- this is your break up page -->
-                <form id="break-up" class=" col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                <form id="break-up" class="col-xs-12 col-sm-10 col-sm-offset-1">
                     <div id="break-title">
                         <h1>swift.breakup</h1>
                         <h2>Find out what song defines your break up!</h2>
@@ -178,62 +178,15 @@
                             <input type="radio" name="break-quest5" value="break5-opt5"> option 5
                         </li>
                     </ul>
-                    <!-- TODO: ACCESSKEY and TABINDEX to all buttons -->
-                        <button type="button"  accesskey="b" tabindex="2" class="col-xs-2 col-xs-offset-1" data-dismiss="modal">
-                            Sonify
-                        </button> 
+                    <input type="submit" value ="Sonify!"class="btn btn-danger" accesskey="b" tabindex="2" data-dismiss="modal" data-toggle="collapse" data-target="#main, #launcher, #page-1">
                 </form>
             </div>
         </div>
     </div>
          
-        
-
-       <!-- <div class="break-extra"></div>
-
-       <!-- This is the extra section
-        <form id="extra" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-            <!-- TODO: 'title' is already in use as an ID all IDs must be unique 
-            <div id="extra-title">
-                <h1>Extras!</h1>
-                <h2>A couple add-ons to improve your swift experience.</h2>
-            </div>
-
-            <div id="questions">
-              <!-- TODO: add values to all checkboxes 
-                <input type="checkbox" name="theme" value="swift-theme">Would you like a personal Swift-theme?<br>
-                <input type="checkbox" name="theme" value="swift-mood">How about a mood playlist?<br>
-            </div>
-
-            <button type="button" id="go-main" accesskey="c" tabindex="3">
-                <a href="#main-1">Done!</a>
-            </button> <br>
-
-            <progress value="3" max="3"></progress>
-        </form>
-        -->
-    
-        <!-- this is your main page. can you remove the bullets in the list using css. -->
-            <!-- h2's are going to be   your dummies -->
-<div class="row">
-    <div id="page-1">
+<div id="main" class="row collapse">
+    <div id="page-1" class="collapse"></div>
             <div id="main-1" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-
-                <!-- <div id="nav-1">
-                    <ul class="nav-pills">
-                        <li role="presentation">
-                            <button type="button" class="btn" accesskey="q" tabindex="4">
-                                <a href="#main-1">Nav 1</a>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button type="button" class="btn" accesskey="w" tabindex="5">
-                                <a href="#main-2">Nav 2</a>
-                            </button>
-                        </li>
-                    </ul>
-                </div> -->
-
                 <div id="swift-gen">
                     <h1 id="gen">YOUR <mark>SWIFT GEN</mark> IS</h1>
                     <h2 id="your-gen">RED</h2>
@@ -253,25 +206,10 @@
                     </ol>
                 </div>
             </div>
-        </div>
+        
     
         <div id="page-2">
             <div id="main-2" class="card col-xs-12 col-sm-10 col-sm-offset-1  col-md-6 col-md-offset-3">
-
-                <!-- <div id="nav-2"> 
-                    <ul class="nav-pills">
-                        <li role="presentation">
-                            <button type="#button" class="btn" accesskey="z" tabindex="6">
-                                <a href="#main-1">Nav 1</a>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button type="button" class="btn" accesskey="g" tabindex="7">
-                                <a href="#main-2">Nav 2</a>
-                            </button>
-                        </li>
-                    </ul>
-                </div> -->
 
                 <form id="top-song">
                     <h1>TRENDING</h1>
@@ -297,8 +235,6 @@
             </div>
         </div>
     </div>
-    
-    
     </div>
 </body>
 </html>
