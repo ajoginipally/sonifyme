@@ -4,9 +4,8 @@
     <head>
         <title>Swift-ly</title>
         <meta charset="UTF-8">
-        <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:500,400,600,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
         <!-- Latest compiled and minified CSS -->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -216,6 +215,8 @@
     
         <!-- this is your main page. can you remove the bullets in the list using css. -->
             <!-- h2's are going to be   your dummies -->
+<div class="row">
+    <div id="page-1">
             <div id="main-1" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
 
                 <!-- <div id="nav-1">
@@ -234,17 +235,16 @@
                 </div> -->
 
                 <div id="swift-gen">
-                    <h1 id="gen">YOUR SWIFT GEN IS</h1>
+                    <h1 id="gen">YOUR <mark>SWIFT GEN</mark> IS</h1>
                     <h2 id="your-gen">RED</h2>
-                    <h1 id="song">YOUR SWIFT SONG IS</h1>
-                    <h2 id="your-song">We are Never Ever Getting Back together</h2>
+                    <h1 id="song">YOUR <mark>SWIFT SONG</mark> IS</h1>
+                    <h2 id="your-song" class="col-xs-12 col-sm-12 col-md-12">We are Never Ever Getting Back together</h2>
                 </div>
 
                 <div id="mood">
-                    <h1>MOOD</h1>
-                    <h2>SAD</h2>
-                    <h1>PLAYLIST</h1>
-                    <ol id="playlist" class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <h1 class="col-xs-12">MOOD PLAYLIST</h1>
+                    <h2>SAD</h2> 
+                    <ol id="playlist" class="col-xs-12 col-sm-12 col-md-12">
                         <li value="1">Song 1</li>
                         <li value="2">Song 2</li>
                         <li value="3">Song 3</li>
@@ -253,8 +253,10 @@
                     </ol>
                 </div>
             </div>
-
-            <div id="main-2" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+        </div>
+    
+        <div id="page-2">
+            <div id="main-2" class="card col-xs-12 col-sm-10 col-sm-offset-1  col-md-6 col-md-offset-3">
 
                 <!-- <div id="nav-2"> 
                     <ul class="nav-pills">
@@ -274,26 +276,29 @@
                 <form id="top-song">
                     <h1>TRENDING</h1>
                     <div class="btn-group" role="group" aria-label="...">
-                      <button type="button" class="btn btn-default active">Today</button>
-                      <button type="button" class="btn btn-default">Week</button>
-                      <button type="button" class="btn btn-default">Month</button>
-                      <button type="button" class="btn btn-default">All-Time</button>
+                      <button type="button" class="btn btn-default active btn-warning">Today</button>
+                      <button type="button" class="btn btn-default btn-warning">Week</button>
+                      <button type="button" class="btn btn-default btn-warning">Month</button>
+                      <button type="button" class="btn btn-default btn-warning">All-Time</button>
                     </div>
-                    <ol id="trendlist" class="col-xs-12 col-sm-10 col-sm-offset-1 list-group">
-                        <li value="1" class="list-group-item">Song 1</li>
-                        <li value="2" class="list-group-item">Song 2</li>
-                        <li value="3" class="list-group-item">Song 3</li>
-                        <li value="4" class="list-group-item">Song 4</li>
-                        <li value="5" class="list-group-item">Song 5</li>
+                    <ol id="trendlist" class="col-xs-12 col-sm-12 col-md-12">
+                        <li value="1">Song 1</li>
+                        <li value="2">Song 2</li>
+                        <li value="3">Song 3</li>
+                        <li value="4">Song 4</li>
+                        <li value="5">Song 5</li>
                     </ol>
                 </form>
 
                 <div id="break-up-main">
-                    <h1>YOUR BREAK UP SONG IS</h1>
+                    <h1>YOUR <mark>BREAK UP SONG</mark> IS</h1>
                     <h2>Teardrops on My Guitar</h2>
                 </div>
             </div>
-
         </div>
-    </body>
+    </div>
+    
+    
+    </div>
+</body>
 </html>

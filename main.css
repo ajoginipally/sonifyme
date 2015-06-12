@@ -2,20 +2,18 @@ body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
    font-family: 'Marck Script', cursive;
-   background-repeat: no-repeat;
-    background-image: url("images/manhattan.jpg");
    height: 100%;   
 }
 
 h1{
    font-size:3em;
-   margin:1%;
+   margin:3%;
    color:white;
-    text-shadow: .1em .1em 0em rgba(0,0,0,0.2);
+    text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
 h2{
-   font-size:1.1em;
-   margin:.7%;
+   
+   margin:2%;
     color: white;
 }
 h3{
@@ -28,13 +26,6 @@ breathing room when it is used*/
    margin:.7%;
 }
 
-#quiz-questions li, #break-questions li{
-   list-style-type:none;
-   /*border-bottom:1px solid gray;*/
-   /*do we want the border or not? commented out for now*/
-   margin:1.7%;
-   font-family:'Philosopher', sans-serif;
-}
 #quiz-questions, #break-questions{
    /*Gets us some breathing room between questions */
    margin-top:2px;
@@ -49,19 +40,7 @@ we move to a modal or other implementation for these sections, these will be rem
 #quiz{
    /*top:2%;*/
 }
-/#break-up{
-   top:105%;
-}
-#extra{
-   top:210%;
-}
-#main-1{
-   
-} 
-#main-2{
-   top:200%;
-   
-} 
+
 /*end sequential card placement*/
 
 /*#swift-gen, #top-song{
@@ -72,10 +51,11 @@ we move to a modal or other implementation for these sections, these will be rem
 a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
 next few rules also do this.*/
    height:40%;
-   margin:5%;
+   margin-left: 5%;
+   margin-right: 5%;
 }
 #swift-gen{
-   height:32%;
+   height:30%;
 }
 #mood{
    height:50%;
@@ -105,11 +85,14 @@ to be considered centered*/
 /*End nav float compensation*/
 
 #swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
-   font-family: 'Lobster', cursive;
+   font-family: 'Raleway', sans-serif;
+}
+#trendlist {
+    top: 3vh;
 }
 /*These are the rules that define a card*/
 .card{
-   border-radius:7%;
+   /*border-radius:7%;
    /*margin:1.5%;
    margin-bottom:4%;
    margin-top:2%; */
@@ -117,11 +100,10 @@ to be considered centered*/
    /* width:50%; 
    min-width:475px;
    /* left:25%; */
-   /* padding:2%; */
-   position:absolute; 
+   /* padding:2%; */ 
    /* display:block; */
    text-align:center;
-   background-color: rgba(0, 0, 0, 0.2); /* Beige*/
+    /* Beige*/
    overflow-y:auto;
    overflow-x:hidden;
    /* padding-right:5%; */
@@ -147,21 +129,7 @@ quiz questions are no longer laid out as they currently are*/
 #nav-1 li, #nav-2 li{
    list-style-type:none;
 }
-#your-song, #break-up-main h2{
-   position:relative;
-   top:15%;
-   font-size: 1.3em;
 
-}
-
-#quiz-questions li:nth-child(even), #break-questions li:nth-child(even), 
-#playlist li:nth-child(even), #trendlist li:nth-child(even){
-/*Zebra striping on list elements*/
-   background-color:#FA926C;/*this is kind of salmon-y pink*/
-}
-#playlist li:nth-child(odd), #trendlist li:nth-child(odd){
-     background-color: #FFEC8F; /* Beige*/
-}
 a{
    text-decoration:none;
    /*color:black;*/
@@ -217,14 +185,132 @@ quiz section. May need more styling for aesthetic reasons later
       /*overflow-y:hidden;*/
 /*overflow used here only for testing without scrollbar getting in the way*/
    }
-    .container-fluid{
-        padding-left:0%;   
+
+.container-fluid{
+        padding: 0;
     }
-#gen {
-    color: #ed6464;
-}
-#song {
-    color: cornflowerblue;
+
+
+#page-1 {
+    height: 100vh;
+    width: 100%;
+    background: url("images/pink-city.jpg") fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
 }
 
+#page-2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("images/city.jpg");
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#swift-gen h1 {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+    color: #779ECB;
+}
+
+#swift-gen h2 {
+    font-size: 3vh;
+    font-family: 'Abel', sans-serif;
+}
+
+#swift-gen mark {
+    color: #d65656;
+    background: transparent;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+#mood h1 {
+    font-size: 4.5vh;
+    margin-bottom: 3vh;
+    color: #779ECB;
+}
+
+#mood h2 {
+    font-size: 3vh;
+    font-family: 'Abel', sans-serif;
+}
+
+#main-1 {
+    background-color: rgba(0,0,0,.2);
+    height: 100%
+}
+
+#main-2 {
+    background-color: rgba(0,0,0,.2);
+    height: 100%
+}
+
+#top-song h1 {
+    font-size: 5vh;
+    color: #70a39c;
+}
+
+#break-up-main h1{
+    font-size: 5vh;
+    color: #70a39c;
+}
+
+#break-up-main mark{
+    background: transparent;
+    color: #ffa741;
+    font-weight: 800;
+}
+
+#break-up-main h2 {
+    font-size: 3vh;
+    font-family: 'Abel', sans-serif;
+}
+
+#quiz-questions li:nth-child(even), #break-questions li:nth-child(even), 
+#playlist li:nth-child(even){
+/*Zebra striping on list elements*/
+   background-color:rgba(233, 37, 37, 0.17);/*this is kind of salmon-y pink*/
+}
+
+#trendlist li:nth-child(even){
+    background-color: rgba(255, 167, 65, 0.29);
+    color: white;
+}
+
+#trendlist li:nth-child(odd){
+    color: white;
+}
+
+#playlist li:nth-child(odd){
+     color: white;
+    list-style: none;
+}
+
+#playlist li:nth-child(even){
+     background-color: color: rgba(112, 163, 156, 0.32);
+     color: white;
+    list-style: none;
+}
+
+#top-song {
+    height: 40%
+}
+
+.btn-group {
+    font-family: 'Raleway', sans-serif;
+}
+    
 
