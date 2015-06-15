@@ -31,9 +31,11 @@
       <div class="container-fluid">
 
       <!-- Button trigger modal -->
-         <button type="button" id = "launcher" class="btn btn-warning btn-lg col-xs-3 col-xs-offset-4 collapse in" data-toggle="modal" data-target="#myModal-1">
-            <span id="song-mod" class="hidden-xs hidden-sm">What song do you Sonify?</span><span id="song-mod" class = "visible-xs visible-sm">Start</span>
-         </button>
+         <div class="col-xs-3 col-xs-offset-4 collapse in" id="launcher">
+            <button type="button"  class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal-1">
+               <span id="song-mod" class="hidden-xs hidden-sm">What song do you Sonify?</span><span id="song-mod" class = "visible-xs visible-sm">Start</span>
+            </button>
+         </div>
           <!-- Modal -->
           <div id="myModal-1" class="modal fade" data-backdrop="static" role="dialog">
               <div class="modal-dialog">
