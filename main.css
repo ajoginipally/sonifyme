@@ -1,18 +1,6 @@
 body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
-<<<<<<< HEAD
-   font-family: 'Raleway', sans-serif;
-   height: 100%;
-   background-color: rgb(166,32,69); 
-}
-
-.modal{
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
-}
-
-=======
    height: 100%;
    background-color: rgb(166,32,69);
    font-family: 'Raleway', sans-serif;
@@ -22,7 +10,6 @@ body{
    -webkit-overflow-scrolling: touch;
    overflow-y: scroll;
 }
->>>>>>> 080c8b7734d3641b37f23d5dd8b7b72470ee8d0e
 
 #song-mod {
    font-family: 'Raleway', sans-serif;
