@@ -1,9 +1,18 @@
 body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
-   font-family: 'Marck Script', cursive;
-   height: 100%;   
-  
+   height: 100%;
+   background-color: rgb(166,32,69);
+   font-family: 'Raleway', sans-serif;
+}
+
+.modal{
+   -webkit-overflow-scrolling: touch;
+   overflow-y: scroll;
+}
+
+#song-mod {
+   font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -30,12 +39,30 @@ breathing room when it is used*/
 #quiz-questions, #break-questions{
    /*Gets us some breathing room between questions */
    margin-top:2px;
+    list-style: none;
+    padding-left: 0;
+    color: #ebebeb;
+    font-family: 'Abel', sans-serif;
    /* padding-left:3%; */
 }
 #quiz-questions li:last-child, #break-questions li:last-child{
 /*eliminates trailing border on last questions*/
    border-bottom:none;
 }
+
+#quiz-title h1, #break-title h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #ebebeb;
+    font-weight: 100;
+}
+
+#quiz-title h2, #break-title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #d9534f;
+    text-shadow: .07em .07em 0em #6d211f;
+}
+
 #swift-gen, #mood, #top-song, #break-up-main{
 /*These nudge elements around in the main section to keep them from 
 a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
@@ -79,17 +106,16 @@ to be considered centered*/
    text-align:center;
    overflow-y:auto;
    overflow-x:hidden;
-   
    background-color:rgba(150,150,150,.1);
    border-radius:18px;
 
 }
 
 .card-quiz{
-    text-align: center;
-    background-color: #FFEC8F;
-    overflow-y:auto;
-    overflow-x:hidden;
+   text-align: center;
+   background-color: #2b3e50;
+   overflow-y:auto;
+   overflow-x:hidden;
 }
 a{
    text-decoration:none;
@@ -98,37 +124,42 @@ a{
 }
 
 .container-fluid{
-        padding: 0;
-    }
+      padding: 0;
+   }
 
 #page-1 {
-    height: 115vh;
-    
-    width: 105%; 
-    background: url("images/city.jpg") fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position:fixed;
-    z-index:-2;
-    animation: fadeIn 4s linear forwards;
-   -webkit-animation: fadeIn 4s linear forwards;
+   height: 100vh;
+   width: 105%; 
+   background: url("images/pink-city.jpg") fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-attachment:fixed;
+   z-index:-2;
+   animation: fadeIn 3s linear forwards;
+   -webkit-animation: fadeIn 3s linear forwards;
+   overflow-x:hidden;
     
 }
 
 #page-2 {
-   top:100%;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-image: url("images/pink-city.jpg");
-        -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-       animation: fadeIn 3s ease forwards;
+   top:200%;
+   height: 100vh;
+   width: 105%;
+   background-color: rgba(0, 0, 0, 0.2);
+   background-image: url("images/city.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: bottom;
+   animation: fadeIn 3s ease forwards;
    -webkit-animation: fadeIn 3s ease forwards;
+   z-index:2;
+   position:relative;
+   display:block;
+   overflow-x:hidden;
     
 }
 
@@ -138,14 +169,14 @@ a{
 }
 
 #swift-gen h1 {
-    font-size: 5vh;
-    margin-bottom: 3vh;
-    color: #779ECB;
+   font-size: 5vh;
+   margin-bottom: 3vh;
+   color: #87b6eb;
 }
 
 #swift-gen h2 {
-    font-size: 3vh;
-    font-family: 'Abel', sans-serif;
+   font-size: 3vh;
+   font-family: 'Abel', sans-serif;
 }
 
 #swift-gen mark {
@@ -167,19 +198,20 @@ a{
 }
 
 #main-1 {
-   margin-top:10%;
+   margin-top:5%;
    background-color: rgba(0,0,0,.3);
-   height: 100%;
-   position:relative;
+   height: 90%;
+   top:0;
+   position:absolute;
    z-index:3;
+   display:block;
 }
 
 #main-2 {
    background-color: rgba(0,0,0,.3);
-   height: 100%;
+   height: 90%;
    position:relative;
-   top:15%;
-   margin-top:15%;
+   margin-top:5%;
 
 }
 
@@ -206,7 +238,7 @@ a{
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
 /*Zebra striping on list elements*/
-   background-color:rgba(233, 37, 37, 0.17);/*this is kind of salmon-y pink*/
+    background-color: #4e5d6c;
 }
 
 #trendlist li{
@@ -216,8 +248,6 @@ a{
 #trendlist li:nth-child(even){
    background-color: rgba(255, 167, 65, 0.29);
 }
-
-
 
 #playlist li{
    color: white;   
@@ -281,9 +311,16 @@ a.list-group-item:hover{
 button .btn {
    text-transform:small-caps!important;
 }
+
+.btn a{
+   color:white;
+   text-decoration:none;
+   outline:none;
+}
 #launcher{
    position:absolute; 
    top:45%;
+    left: 4%;
 }
 
 #main{
