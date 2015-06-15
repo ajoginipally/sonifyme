@@ -1,9 +1,18 @@
 body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
+   height: 100%;
+   background-color: rgb(166,32,69);
    font-family: 'Raleway', sans-serif;
-   height: 100%;   
-  
+}
+
+.modal{
+   -webkit-overflow-scrolling: touch;
+   overflow-y: scroll;
+}
+
+#song-mod {
+   font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -30,12 +39,30 @@ breathing room when it is used*/
 #quiz-questions, #break-questions{
    /*Gets us some breathing room between questions */
    margin-top:2px;
+    list-style: none;
+    padding-left: 0;
+    color: #ebebeb;
+    font-family: 'Abel', sans-serif;
    /* padding-left:3%; */
 }
 #quiz-questions li:last-child, #break-questions li:last-child{
 /*eliminates trailing border on last questions*/
    border-bottom:none;
 }
+
+#quiz-title h1, #break-title h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #ebebeb;
+    font-weight: 100;
+}
+
+#quiz-title h2, #break-title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #d9534f;
+    text-shadow: .07em .07em 0em #6d211f;
+}
+
 #swift-gen, #mood, #top-song, #break-up-main{
 /*These nudge elements around in the main section to keep them from 
 a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
@@ -85,10 +112,10 @@ to be considered centered*/
 }
 
 .card-quiz{
-    text-align: center;
-    background-color: #FFEC8F;
-    overflow-y:auto;
-    overflow-x:hidden;
+   text-align: center;
+   background-color: #2b3e50;
+   overflow-y:auto;
+   overflow-x:hidden;
 }
 a{
    text-decoration:none;
@@ -97,20 +124,20 @@ a{
 }
 
 .container-fluid{
-        padding: 0;
-    }
+      padding: 0;
+   }
 
 #page-1 {
-    height: 100vh;
-    width: 105%; 
-    background: url("images/pink-city.jpg") fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+   height: 100vh;
+   width: 105%; 
+   background: url("images/pink-city.jpg") fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
    background-attachment:fixed;
-    z-index:-2;
-    animation: fadeIn 3s linear forwards;
+   z-index:-2;
+   animation: fadeIn 3s linear forwards;
    -webkit-animation: fadeIn 3s linear forwards;
    overflow-x:hidden;
     
@@ -142,14 +169,14 @@ a{
 }
 
 #swift-gen h1 {
-    font-size: 5vh;
-    margin-bottom: 3vh;
-    color: #779ECB;
+   font-size: 5vh;
+   margin-bottom: 3vh;
+   color: #87b6eb;
 }
 
 #swift-gen h2 {
-    font-size: 3vh;
-    font-family: 'Abel', sans-serif;
+   font-size: 3vh;
+   font-family: 'Abel', sans-serif;
 }
 
 #swift-gen mark {
@@ -211,7 +238,7 @@ a{
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
 /*Zebra striping on list elements*/
-   background-color:rgba(233, 37, 37, 0.17);/*this is kind of salmon-y pink*/
+    background-color: #4e5d6c;
 }
 
 #trendlist li{
@@ -221,8 +248,6 @@ a{
 #trendlist li:nth-child(even){
    background-color: rgba(255, 167, 65, 0.29);
 }
-
-
 
 #playlist li{
    color: white;   
@@ -295,6 +320,7 @@ button .btn {
 #launcher{
    position:absolute; 
    top:45%;
+    left: 4%;
 }
 
 #main{
