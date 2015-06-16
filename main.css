@@ -289,11 +289,11 @@ button .btn {
 #main{
    background-color:rgb(0, 0, 31);
    z-index:2;
-   animation: fadeIn .2s linear forwards;
+   animation: myFadeIn .2s linear forwards;
    -webkit-animation: myFadeIn .2s linear forwards;
 }
 
-@-webkit-keyframes fadeIn{
+@-webkit-keyframes myFadeIn{
    from{
       opacity:0;
    }
