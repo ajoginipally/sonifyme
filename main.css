@@ -4,6 +4,7 @@ body{
    height: 100%;
    background-color: rgb(166,32,69);
    font-family: 'Raleway', sans-serif;
+   color:white;
 }
 
 .modal{
@@ -18,12 +19,12 @@ body{
 h1{
    font-size:3em;
    margin:3%;
-   color:white;
+
    text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
 h2{
    margin:2%;
-   color: white;
+
 }
 h3{
    font-size:.9em;
@@ -222,7 +223,7 @@ a{
 }
 
 #trendlist li, #playlist li{
-   color: white;
+
 }
 /*Zebra striping on list elements*/
 #trendlist li:nth-child(even){
@@ -265,7 +266,6 @@ a.list-group-item:hover{
 .list-group-item:nth-child(even){
    background-color:#fff2ff;
    background-opacity:.2;
-  
 }
 
 .btn{
@@ -299,7 +299,7 @@ button .btn {
 #launcher{
    position:absolute; 
    top:45%;
-    left: 4%;
+   left: 4%;
 }
 
 #main{
@@ -309,14 +309,6 @@ button .btn {
    -webkit-animation: myFadeIn .2s linear forwards;
 }
 
-#sharingIsProbablyNotCaring{
-   position:fixed;
-   top:10%;
-   right:2%;
-   z-index:3;
-   height:10%;
-   border:1px solid lavender;
-}
 @-webkit-keyframes fadeIn{
    from{
       opacity:0;
