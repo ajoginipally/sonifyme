@@ -84,6 +84,7 @@ h3{
    overflow-x:hidden;
    padding-bottom:1%;
 }
+
 a{
    text-decoration:none;
    font-weight:bold;
@@ -189,7 +190,7 @@ a{
    padding-bottom:1%;
 }
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
-/*Zebra striping on list elements*/
+   /*Zebra striping on list elements*/
    background-color: #4e5d6c; /*grayish bluish*/
 }
 
@@ -212,8 +213,6 @@ a{
    height: 40%;
 }
 
-
-
 .collapsing{
    transition-duration:0s;
    -o-transition-duration:0s;
@@ -229,7 +228,9 @@ a{
 }
 .btn{
    border-width:0 1px 4px 1px;
-   border-radius:5px;
+   border-radius:8px;
+   white-space:normal !important;
+   /*causes word wrap for long quiz responses*/
 }    
 .btn:hover, .btn.active, .btn:active, .btn:focus{
    margin-top: 3px;
