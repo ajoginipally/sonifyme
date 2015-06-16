@@ -257,17 +257,6 @@ a{
    display:none;
 }
 
-a.list-group-item:hover{
-   cursor:default;
-}
-.list-group-item{
-   background-color:transparent;
-}
-.list-group-item:nth-child(even){
-   background-color:#fff2ff;
-   background-opacity:.2;
-}
-
 .btn{
    border-width:0 1px 4px 1px;
    text-transform:small-caps;
