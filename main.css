@@ -12,10 +12,6 @@ body{
    overflow-y: scroll;
 }
 
-#song-mod {
-   font-family: 'Raleway', sans-serif;
-}
-
 h1{
    font-size:3em;
    margin:3%;
@@ -55,7 +51,7 @@ h3{
    padding-top:2%;
    font-size: 1.2em;
    font-family: 'Hammersmith One', sans-serif;
-   color:#d9534f;/*reddish*/
+   color: #ebebeb;/*light gray*//*#d9534f;/*reddish*/
    text-shadow: .07em .07em 0em #6d211f;
 }
 
@@ -80,14 +76,6 @@ h3{
    margin-top:3%;
 }
 /*These are the rules that define a card*/
-.card{
-   height:97%;
-   text-align:center;
-   overflow-y:auto;
-   overflow-x:hidden;
-   background-color:rgba(150,150,150,.1);
-   border-radius:18px;
-}
 
 .card-quiz{
    text-align: center;
@@ -108,7 +96,7 @@ a{
 
 #page-1 {
    height: 100vh;
-   width: 105%; 
+   width: 100%; 
    background: url("images/pink-city.jpg") fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -124,7 +112,7 @@ a{
 #page-2 {
    top:200%;
    height: 100vh;
-   width: 105%;
+   width: 100%;
    opacity:0;
    background-color: rgba(0, 0, 0, 0.2);
    background-image: url("images/city.jpg");
@@ -170,21 +158,21 @@ a{
    font-family: 'Hammersmith One', sans-serif;
 }
 
-#main-1 {
-   margin-top:5%;
+.card{
+   text-align:center;
+   overflow-y:auto;
+   overflow-x:hidden;
    background-color: rgba(0,0,0,.3);
    height: 90%;
+   border-radius:18px;
+   margin-top:5%; 
+}
+
+#main-1 {
    top:0;
    position:absolute;
    z-index:3;
    display:block;
-}
-
-#main-2 {
-   background-color: rgba(0,0,0,.3);
-   height: 90%;
-   position:relative;
-   margin-top:5%;
 }
 
 #top-song h1, #break-up-main h1{
@@ -224,9 +212,7 @@ a{
    height: 40%;
 }
 
-.btn-group {
-   font-family: 'Raleway', sans-serif;
-}
+
 
 .collapsing{
    transition-duration:0s;
@@ -237,7 +223,10 @@ a{
    transition-timing-function: ease;
    display:none;
 }
-
+/* override buttons for 3D effect*/
+.btn-group {
+   font-family: 'Raleway', sans-serif;
+}
 .btn{
    border-width:0 1px 4px 1px;
    border-radius:5px;
@@ -261,6 +250,7 @@ a{
    text-decoration:none;
    outline:none;
 }
+/* end button overrides*/
 
 #launcher{
    position:absolute; 
@@ -274,7 +264,6 @@ a{
    animation: fadeIn .2s linear forwards;
    -webkit-animation: myFadeIn .2s linear forwards;
 }
-
 @-webkit-keyframes fadeIn{
    from{
       opacity:0;

@@ -30,36 +30,56 @@
       <!-- Button triggers modal -->
          <div class="col-xs-3 col-xs-offset-4 collapse in" id="launcher">
             <button type="button"  class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal-1">
-               <span id="song-mod" class="hidden-xs hidden-sm">What song do you Sonify?</span><span id="song-mod" class = "visible-xs visible-sm">Start</span>
+               <span class="hidden-xs hidden-sm">What song do you Sonify?</span><span class = "visible-xs visible-sm">Start</span>
             </button>
          </div>
-          <!-- Modal -->
+         <!-- Modal -->
          <div id="myModal-1" class="modal fade" data-backdrop="static" role="dialog">
               <div class="modal-dialog">
                   <!-- Modal content-->
                   <div class="modal-content card-quiz">
                      <!-- This is your quiz page -->
+                     <!-- To fix: with the buttons, there is some overflow with longer responses. ..maybe dropdown on smaller screens?--> 
                      <form id="quiz" class="col-xs-12">
-                        <div id="quiz-title" class="modal-header">
+                        <div class="modal-header">
                               <h1>Taylor.sonify</h1>
                               <h2>How does Swift define you?</h2>
                         </div>
                         <ul id="quiz-questions">
                            <li id="quiz-question1">
                                <h3>How did you feel waking up today?</h3>
-                               <input type="radio" name="quiz-quest1" value="quiz1-opt1"> 5 more min please
-                               <input type="radio" name="quiz-quest1" value="quiz1-opt2"> I hate the light
-                               <input type="radio" name="quiz-quest1" value="quiz1-opt3"> Sleep is the cousin of death
-                               <input type="radio" name="quiz-quest1" value="quiz1-opt4"> Considering I woke up at 1PM, pretty good
-
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt1"/>5 more min please
+                        </label>
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt2"/>I hate the light
+                        </label>
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt3"/>Sleep is the cousin of death
+                        </label>
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt4"/>Considering I woke up at 1PM, pretty good
+                        </label>
+                     </div>
                            </li>
 
                            <li id="quiz-question2">
                                <h3>You catch a magic fish that offers to grant you a wish if you release it. You...</h3>
-                               <input type="radio" name="quiz-quest2" value="quiz2-opt1"> Get so excited that you shake the boat and it falls into the water
-                               <input type="radio" name="quiz-quest2" value="quiz2-opt2"> Cut it off half way through its' speech and toss it on the grill
-                               <input type="radio" name="quiz-quest2" value="quiz2-opt3"> Threaten it to get more wishes
-                               <input type="radio" name="quiz-quest2" value="quiz2-opt4"> Accidently wish for something stupid
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt1"/>Get so excited that you shake the boat and it falls into the water
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt2"/>Cut it off half way through its' speech and toss it on the grill
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt3"/>Threaten it to get more wishes
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt4"/>Accidently wish for something stupid
+                                 </label>
+                              </div>
 
                            </li>
 
@@ -132,7 +152,7 @@
 
                   <!-- this is your break up page -->
                   <div id="break-up" class="col-xs-12">
-                     <div id="break-title" class="modal-header">
+                     <div class="modal-header">
                         <h1>swift.breakup</h1>
                         <h2>Find out what song defines your break up!</h2>
                      </div>
