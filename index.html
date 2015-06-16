@@ -186,7 +186,7 @@
          </div><!-- End breakup quiz modal-->
            
          <div id="main" class="row collapse">
-            <div id="page-1" class="collapse"></div><!-- div page-1 closed to remain fixed to back while content scrolls-->
+            <div id="page-1" class="collapse"></div><!-- div page-1 closed here to remain fixed to back while content scrolls-->
             <!-- First main 'page' content. Contains Album result, Sonify song, Mood & Playlist-->
                <div id="main-1" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
                    <div id="swift-gen">
@@ -199,7 +199,7 @@
                    <div id="mood">
                        <h1 class="">MOOD PLAYLIST</h1>
                        <h2>SAD</h2> 
-                       <ol id="playlist">
+                       <ol id="playlist" class="list-unstyled">
                            <li>Back to December</li>
                            <li>Sad Beautiful Tragic</li>
                            <li>Dear John</li>
@@ -209,16 +209,26 @@
                    </div>
                </div>
               
-          <!-- Second page. Contains information on trends and breakup song result-->
+          <!-- Second page. Contains information on Sonify trends and breakup song result-->
                <div id="page-2">
-                  <div id="main-2" class="card col-xs-12 col-sm-10 col-sm-offset-1  col-md-6 col-md-offset-3">
+                  <div id="main-2" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
                      <h1>TRENDING</h1>
-                     <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default active btn-warning">Today</button>
-                        <button type="button" class="btn btn-default btn-warning">Week</button>
-                        <button type="button" class="btn btn-default btn-warning">Month</button>
-                        <button type="button" class="btn btn-default btn-warning">&infin;</button>
+                     <form><!-- form has no action, as this does not submit anything as of yet-->
+                     <div class="btn-group" data-toggle="buttons" role="group" aria-label="...">
+                        <label class="btn btn-default active btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="today"checked> Today
+                        </label>
+                         <label class="btn btn-default  btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="week"> Week
+                        </label>
+                         <label class="btn btn-default  btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="month"> Month
+                        </label>
+                         <label class="btn btn-default  btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="all"> &infin;
+                        </label>
                      </div>
+                     </form>
                      <ol id="trendlist">
                         <li>Love Story</li>
                         <li>Shake it Off</li>

@@ -210,9 +210,8 @@ a{
    background-color: rgba(255, 167, 65, 0.29); /*orange*/
 }
 
-#playlist li{  
-   list-style-type: none;
-   right:4%;
+#playlist{  
+   right:1.18%;
    position:relative;
 }
 
@@ -266,7 +265,7 @@ a{
 #launcher{
    position:absolute; 
    top:45%;
-   left: 4%;
+   left: 3%;
 }
 
 #main{
