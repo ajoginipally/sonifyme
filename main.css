@@ -237,6 +237,8 @@ a{
    padding-bottom:4px;
    border-bottom-width: 3px;
    margin-bottom:0;
+   transition: all .5s;
+   -webkit-transition: all .5s;
 }
 
 .btn-lg:hover, .btn-lg.active, .btn-lg:active, .btn-lg:focus{
@@ -244,6 +246,8 @@ a{
    padding-bottom:7px;
    border-bottom-width: 5px;
    margin-bottom:0;
+   transition: all .5s;
+   -webkit-transition: all .5s;
 }
 
 .btn a{
