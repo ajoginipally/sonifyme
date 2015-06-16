@@ -22,17 +22,11 @@ h1{
    text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
 h2{
-   
    margin:2%;
-    color: white;
+   color: white;
 }
 h3{
    font-size:.9em;
-   margin:.7%;
-}
-
-hr{/* not sure the hr is necessary, but this margin gets us some extra 
-breathing room when it is used*/
    margin:.7%;
 }
 
@@ -43,11 +37,6 @@ breathing room when it is used*/
     padding-left: 0;
     color: #ebebeb;
     font-family: 'Abel', sans-serif;
-   /* padding-left:3%; */
-}
-#quiz-questions li:last-child, #break-questions li:last-child{
-/*eliminates trailing border on last questions*/
-   border-bottom:none;
 }
 
 #quiz-title h1, #break-title h1 {
@@ -83,16 +72,6 @@ next few rules also do this.*/
    height:40%
 }
 /*end section positioning*/
-
-/*To follow: keep the nav's float from pushing these over too far to the left 
-to be considered centered*/
-#top-song h1, #top-song select, #your-gen{ 
-   position:relative;
-}
-#swift-gen h1:first-child{
-   position:relative;
-}
-/*End nav float compensation*/
 
 #swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
    font-family: 'Raleway', sans-serif;
@@ -162,7 +141,6 @@ a{
    position:relative;
    display:block;
    overflow-x:hidden;
-    
 }
 
 .row {
@@ -240,29 +218,28 @@ a{
 
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
 /*Zebra striping on list elements*/
-    background-color: #4e5d6c;
+   background-color: #4e5d6c;
 }
 
-#trendlist li{
+#trendlist li, #playlist li{
    color: white;
 }
-
+/*Zebra striping on list elements*/
 #trendlist li:nth-child(even){
    background-color: rgba(255, 167, 65, 0.29);
 }
 
-#playlist li{
-   color: white;   
+#playlist li{  
    list-style-type: none;
 }
 
-
+/*Zebra striping on list elements*/
 #playlist li:nth-child(even){
    background-color: color: rgba(112, 163, 156, 0.32);
 }
 
 #top-song {
-   height: 40%
+   height: 40%;
 }
 
 .btn-group {
