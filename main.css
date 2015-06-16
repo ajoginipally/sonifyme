@@ -4,6 +4,7 @@ body{
    height: 100%;
    background-color: rgb(166,32,69);
    font-family: 'Raleway', sans-serif;
+   color:white;
 }
 
 .modal{
@@ -18,36 +19,25 @@ body{
 h1{
    font-size:3em;
    margin:3%;
-   color:white;
    text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
+
 h2{
-   
    margin:2%;
-    color: white;
-}
-h3{
-   font-size:.9em;
-   margin:.7%;
 }
 
-hr{/* not sure the hr is necessary, but this margin gets us some extra 
-breathing room when it is used*/
+h3{
+   font-size:.9em;
    margin:.7%;
 }
 
 #quiz-questions, #break-questions{
    /*Gets us some breathing room between questions */
    margin-top:2px;
-    list-style: none;
-    padding-left: 0;
-    color: #ebebeb;
-    font-family: 'Abel', sans-serif;
-   /* padding-left:3%; */
-}
-#quiz-questions li:last-child, #break-questions li:last-child{
-/*eliminates trailing border on last questions*/
-   border-bottom:none;
+   list-style: none;
+   padding-left: 0;
+   color: #ebebeb;
+   font-family: 'Abel', sans-serif;
 }
 
 #quiz-title h1, #break-title h1 {
@@ -63,36 +53,20 @@ breathing room when it is used*/
     text-shadow: .07em .07em 0em #6d211f;
 }
 
-#swift-gen, #mood, #top-song, #break-up-main{
-/*These nudge elements around in the main section to keep them from 
-a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
-next few rules also do this.*/
+#top-song, #break-up-main{
    height:40%;
    margin-left: 5%;
    margin-right: 5%;
+   border-bottom:none;
 }
 #swift-gen{
    height:30%;
 }
 #mood{
    height:50%;
-}
-
-#break-up-main{
-   border-bottom:none;
-   height:40%
+   
 }
 /*end section positioning*/
-
-/*To follow: keep the nav's float from pushing these over too far to the left 
-to be considered centered*/
-#top-song h1, #top-song select, #your-gen{ 
-   position:relative;
-}
-#swift-gen h1:first-child{
-   position:relative;
-}
-/*End nav float compensation*/
 
 #swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
    font-family: 'Raleway', sans-serif;
@@ -108,7 +82,6 @@ to be considered centered*/
    overflow-x:hidden;
    background-color:rgba(150,150,150,.1);
    border-radius:18px;
-
 }
 
 .card-quiz{
@@ -125,8 +98,8 @@ a{
 }
 
 .container-fluid{
-      padding: 0;
-   }
+   padding: 0;
+}
 
 #page-1 {
    height: 100vh;
@@ -141,7 +114,6 @@ a{
    animation: fadeIn 2.5s linear forwards;
    -webkit-animation: fadeIn 2.5s linear forwards;
    overflow-x:hidden;
-    
 }
 
 #page-2 {
@@ -162,7 +134,6 @@ a{
    position:relative;
    display:block;
    overflow-x:hidden;
-    
 }
 
 .row {
@@ -174,11 +145,6 @@ a{
    font-size: 5vh;
    margin-bottom: 3vh;
    color: #87b6eb;
-}
-
-#swift-gen h2 {
-   font-size: 3vh;
-   font-family: 'Abel', sans-serif;
 }
 
 #swift-gen mark {
@@ -194,7 +160,7 @@ a{
    color: #779ECB;
 }
 
-#mood h2 {
+#mood h2, #break-up-main h2,  #swift-gen h2 {
    font-size: 3vh;
    font-family: 'Abel', sans-serif;
 }
@@ -214,15 +180,9 @@ a{
    height: 90%;
    position:relative;
    margin-top:5%;
-
 }
 
-#top-song h1 {
-   font-size: 5vh;
-   color: #70a39c;
-}
-
-#break-up-main h1{
+#top-song h1, #break-up-main h1{
    font-size: 5vh;
    color: #70a39c;
 }
@@ -233,36 +193,27 @@ a{
    font-weight: 800;
 }
 
-#break-up-main h2 {
-   font-size: 3vh;
-   font-family: 'Abel', sans-serif;
-}
-
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
 /*Zebra striping on list elements*/
-    background-color: #4e5d6c;
+   background-color: #4e5d6c;
 }
 
-#trendlist li{
-   color: white;
-}
-
+/*Zebra striping on list elements*/
 #trendlist li:nth-child(even){
    background-color: rgba(255, 167, 65, 0.29);
 }
 
-#playlist li{
-   color: white;   
+#playlist li{  
    list-style-type: none;
 }
 
-
+/*Zebra striping on list elements*/
 #playlist li:nth-child(even){
    background-color: color: rgba(112, 163, 156, 0.32);
 }
 
 #top-song {
-   height: 40%
+   height: 40%;
 }
 
 .btn-group {
@@ -277,18 +228,6 @@ a{
    -o-transition-timing-function: ease;
    transition-timing-function: ease;
    display:none;
-}
-
-a.list-group-item:hover{
-   cursor:default;
-}
-.list-group-item{
-   background-color:transparent;
-}
-.list-group-item:nth-child(even){
-   background-color:#fff2ff;
-   background-opacity:.2;
-  
 }
 
 .btn{
@@ -319,10 +258,11 @@ button .btn {
    text-decoration:none;
    outline:none;
 }
+
 #launcher{
    position:absolute; 
    top:45%;
-    left: 4%;
+   left: 4%;
 }
 
 #main{
@@ -332,14 +272,6 @@ button .btn {
    -webkit-animation: myFadeIn .2s linear forwards;
 }
 
-#sharingIsProbablyNotCaring{
-   position:fixed;
-   top:10%;
-   right:2%;
-   z-index:3;
-   height:10%;
-   border:1px solid lavender;
-}
 @-webkit-keyframes fadeIn{
    from{
       opacity:0;
@@ -348,7 +280,7 @@ button .btn {
       opacity:1;
    }
 }
-@keyframes myFadeIn{
+@keyframes fadeIn{
    from{
       opacity:0;
    }
