@@ -20,6 +20,7 @@ h1{
 
 h2{
    margin:2%;
+   text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
 
 h3{
@@ -136,7 +137,7 @@ a{
 .row {
   margin-right: -15px;
   margin-left: -15px;
-  color: #87b6eb;
+  /*color: #87b6eb;*/
 }
 
 #swift-gen h1 {
