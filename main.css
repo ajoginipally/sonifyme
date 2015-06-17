@@ -6,6 +6,13 @@ body{
    font-family: 'Raleway', sans-serif;
    color:white;
 }
+
+#landingTitle{
+   color:#F4A02A;/*kind of a sherbet orange color*/
+}
+small{
+   color:#D0AD98!important;/*an orangey gray*/
+}
 /*Fill the screen. Fill it.*/
 .container-fluid{
    padding: 0;
