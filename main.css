@@ -2,7 +2,7 @@ body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
    height: 100%;
-   background-color: rgb(166,32,69); /*dark pink*/
+   background-color: rgb(115, 3, 3);/* dark red  rgb(166,32,69); /*dark pink*/
    font-family: 'Raleway', sans-serif;
    color:white;
 }
@@ -264,7 +264,9 @@ a{
    top:45%;
    left: 3%;
 }
-
+#launcher .btn{
+   text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
+}
 #main{
    background-color:rgb(0, 0, 31);
    z-index:2;
