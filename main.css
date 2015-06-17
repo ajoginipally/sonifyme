@@ -2,7 +2,7 @@ body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
    height: 100%;
-   background-color: rgb(166,32,69);
+   background-color: rgb(166,32,69); /*dark pink*/
    font-family: 'Raleway', sans-serif;
    color:white;
 }
@@ -10,10 +10,6 @@ body{
 .modal{
    -webkit-overflow-scrolling: touch;
    overflow-y: scroll;
-}
-
-#song-mod {
-   font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -36,21 +32,27 @@ h3{
    margin-top:2px;
    list-style: none;
    padding-left: 0;
+   color: #ebebeb;/*light gray*/
+   font-family: 'Nunito', sans-serif;
+}
+
+.modal-header  h1{
+   font-family: 'Raleway', sans-serif;
    color: #ebebeb;
-   font-family: 'Abel', sans-serif;
 }
 
-#quiz-title h1, #break-title h1 {
-    font-family: 'Raleway', sans-serif;
-    color: #ebebeb;
-    font-weight: 100;
+.modal-header h2{
+   font-family: 'Raleway', sans-serif;
+   font-weight: 800;
+   color: #d9534f;/*reddish*/
+   text-shadow: .07em .07em 0em #6d211f;
 }
-
-#quiz-title h2, #break-title h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: #d9534f;
-    text-shadow: .07em .07em 0em #6d211f;
+#quiz-questions h3, #break-questions h3{
+   padding-top:2%;
+   font-size: 1.2em;
+   font-family: 'Hammersmith One', sans-serif;
+   color: #ebebeb;/*light gray*//*#d9534f;/*reddish*/
+   text-shadow: .07em .07em 0em #6d211f;
 }
 
 #top-song, #break-up-main{
@@ -64,33 +66,25 @@ h3{
 }
 #mood{
    height:50%;
-   
 }
-/*end section positioning*/
 
-#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
+#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #playlist, #trendlist{
    font-family: 'Raleway', sans-serif;
 }
 #trendlist {
    top: 3vh;
+   margin-top:3%;
 }
 /*These are the rules that define a card*/
-.card{
-   height:97%;
-   text-align:center;
-   overflow-y:auto;
-   overflow-x:hidden;
-   background-color:rgba(150,150,150,.1);
-   border-radius:18px;
-}
 
 .card-quiz{
    text-align: center;
-   background-color: #2b3e50;
+   background-color: #2b3e50; /*navy */
    overflow-y:auto;
    overflow-x:hidden;
    padding-bottom:1%;
 }
+
 a{
    text-decoration:none;
    font-weight:bold;
@@ -103,8 +97,8 @@ a{
 
 #page-1 {
    height: 100vh;
-   width: 105%; 
-   background: url("images/pink-city.jpg") fixed;
+   width: 100%; 
+   background: url("images/pink-city-a.jpg") fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -119,7 +113,7 @@ a{
 #page-2 {
    top:200%;
    height: 100vh;
-   width: 105%;
+   width: 100%;
    opacity:0;
    background-color: rgba(0, 0, 0, 0.2);
    background-image: url("images/city.jpg");
@@ -148,7 +142,7 @@ a{
 }
 
 #swift-gen mark {
-   color: #d65656;
+   color: #d65656;/*powdery reddish*/
    background: transparent;
    font-weight: 800;
    font-family: 'Raleway', sans-serif;
@@ -157,67 +151,66 @@ a{
 #mood h1 {
    font-size: 4.5vh;
    margin-bottom: 3vh;
-   color: #779ECB;
+   color: #779ECB; /*light blue*/
 }
 
 #mood h2, #break-up-main h2,  #swift-gen h2 {
    font-size: 3vh;
-   font-family: 'Abel', sans-serif;
+   font-family: 'Hammersmith One', sans-serif;
+}
+
+.card{
+   text-align:center;
+   overflow-y:auto;
+   overflow-x:hidden;
+   background-color: rgba(0,0,0,.4);
+   height: 90%;
+   border-radius:18px;
+   margin-top:5%; 
 }
 
 #main-1 {
-   margin-top:5%;
-   background-color: rgba(0,0,0,.3);
-   height: 90%;
    top:0;
    position:absolute;
    z-index:3;
    display:block;
 }
 
-#main-2 {
-   background-color: rgba(0,0,0,.3);
-   height: 90%;
-   position:relative;
-   margin-top:5%;
-}
-
 #top-song h1, #break-up-main h1{
    font-size: 5vh;
-   color: #70a39c;
+   color: #70a39c; /*aqua-ish*/
 }
 
 #break-up-main mark{
    background: transparent;
-   color: #ffa741;
+   color: #ffa741; /*pastel orange*/
    font-weight: 800;
 }
-
+#quiz-questions li, #break-questions li{
+   padding-bottom:1%;
+}
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
-/*Zebra striping on list elements*/
-   background-color: #4e5d6c;
+   /*Zebra striping on list elements*/
+   background-color: #4e5d6c; /*grayish bluish*/
 }
 
 /*Zebra striping on list elements*/
 #trendlist li:nth-child(even){
-   background-color: rgba(255, 167, 65, 0.29);
+   background-color: rgba(255, 167, 65, 0.29); /*orange*/
 }
 
-#playlist li{  
-   list-style-type: none;
+#playlist{  
+   right:1.18%;
+   position:relative;
 }
 
 /*Zebra striping on list elements*/
 #playlist li:nth-child(even){
-   background-color: color: rgba(112, 163, 156, 0.32);
+   background-color: color: rgba(112, 163, 156, 0.32);/*light aqua*/
 }
 
 #top-song {
    height: 40%;
-}
-
-.btn-group {
-   font-family: 'Raleway', sans-serif;
 }
 
 .collapsing{
@@ -229,17 +222,24 @@ a{
    transition-timing-function: ease;
    display:none;
 }
-
+/* override buttons for 3D effect*/
+.btn-group {
+   font-family: 'Raleway', sans-serif;
+}
 .btn{
    border-width:0 1px 4px 1px;
-   text-transform:small-caps;
-   border-radius:5px;
+   border-radius:8px;
+   white-space:normal !important;
+   /*causes word wrap for long quiz responses*/
 }    
 .btn:hover, .btn.active, .btn:active, .btn:focus{
    margin-top: 3px;
    padding-bottom:4px;
    border-bottom-width: 3px;
    margin-bottom:0;
+   transition: all .5s;
+   -webkit-transition: all .5s;
+   outline:none;
 }
 
 .btn-lg:hover, .btn-lg.active, .btn-lg:active, .btn-lg:focus{
@@ -247,10 +247,9 @@ a{
    padding-bottom:7px;
    border-bottom-width: 5px;
    margin-bottom:0;
-}
-
-button .btn {
-   text-transform:small-caps!important;
+   transition: all .5s;
+   -webkit-transition: all .5s;
+   outline:none;
 }
 
 .btn a{
@@ -258,11 +257,12 @@ button .btn {
    text-decoration:none;
    outline:none;
 }
+/* end button overrides*/
 
 #launcher{
    position:absolute; 
    top:45%;
-   left: 4%;
+   left: 3%;
 }
 
 #main{
@@ -271,7 +271,6 @@ button .btn {
    animation: fadeIn .2s linear forwards;
    -webkit-animation: myFadeIn .2s linear forwards;
 }
-
 @-webkit-keyframes fadeIn{
    from{
       opacity:0;
@@ -288,5 +287,3 @@ button .btn {
       opacity:1;
    }
 }
-    
-
