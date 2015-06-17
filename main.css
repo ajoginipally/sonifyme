@@ -129,10 +129,14 @@ a{
    display:block;
    overflow-x:hidden;
 }
+#page-2 h1 {
+   color: #70a39c;
+ }
 
 .row {
   margin-right: -15px;
   margin-left: -15px;
+  color: #87b6eb;
 }
 
 #swift-gen h1 {

@@ -25,10 +25,11 @@
    </head>
    <body> 
       <div class="container-fluid">
+      <h1 id="landingTitle" class="col-xs-10 collapse in">Sonify.Me<small class="col-xs-10 hidden-xs">What do you Sonify?</small></h1>
       <!-- Button triggers modal -->
          <div class="col-xs-3 col-xs-offset-4 collapse in" id="launcher">
             <button type="button"  class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal-1">
-               <span class="hidden-xs hidden-sm">What song do you Sonify?</span><span class = "visible-xs visible-sm">Start</span>
+               <span class="hidden-xs hidden-sm">Begin Sonification</span><span class = "visible-xs visible-sm">Start</span>
             </button>
          </div>
          <!-- Modal -->
@@ -316,7 +317,7 @@
                      </ul>
                   </div>
                   <!-- button to a) submit form data b)close modal and c)toggle collapse states for main content and launcher button-->
-                  <input type="submit" value ="Sonify!"class="btn btn-warning" accesskey="b" tabindex="2" data-dismiss= "modal" data-toggle="collapse" data-target="#main, #launcher, #page-1">
+                  <input type="submit" value ="Sonify!"class="btn btn-warning" accesskey="b" tabindex="2" data-dismiss= "modal" data-toggle="collapse" data-target="#main, #launcher, #page-1, #landingTitle">
                      </form><!-- end quiz form. Yes, this is kind of weird-looking. Not sure if this will work properl across two modals, but we can try.  Fix later if kaput. -->
                </div><!-- end breakup modal-content-->
             </div><!--end breakup modal-dialog-->
