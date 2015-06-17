@@ -2,7 +2,7 @@ body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
    height: 100%;
-   background-color: rgb(166,32,69); /*dark pink*/
+   background-color: rgb(113, 3, 3); /*dark pink*/
    font-family: 'Raleway', sans-serif;
    color:white;
 }
@@ -200,7 +200,7 @@ a{
 }
 
 #playlist{  
-   right:1.18%;
+   text-align:center;
    position:relative;
 }
 
