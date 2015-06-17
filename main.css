@@ -6,8 +6,13 @@ body{
    font-family: 'Raleway', sans-serif;
    color:white;
 }
+/*Fill the screen. Fill it.*/
+.container-fluid{
+   padding: 0;
+}
 
 .modal{
+/*makes it so modal scrolls properly when necessary on smaller screens*/
    -webkit-overflow-scrolling: touch;
    overflow-y: scroll;
 }
@@ -72,11 +77,11 @@ h3{
 #swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #playlist, #trendlist{
    font-family: 'Raleway', sans-serif;
 }
+
 #trendlist {
    top: 3vh;
    margin-top:3%;
 }
-/*These are the rules that define a card*/
 
 .card-quiz{
    text-align: center;
@@ -90,10 +95,6 @@ a{
    text-decoration:none;
    font-weight:bold;
    font-family: 'Raleway', sans-serif;
-}
-
-.container-fluid{
-   padding: 0;
 }
 
 #page-1 {
@@ -137,7 +138,6 @@ a{
 .row {
   margin-right: -15px;
   margin-left: -15px;
-  /*color: #87b6eb;*/
 }
 
 #swift-gen h1 {
@@ -163,7 +163,7 @@ a{
    font-size: 3vh;
    font-family: 'Hammersmith One', sans-serif;
 }
-
+/* a card is the translucent gray background behind main content sections*/
 .card{
    text-align:center;
    overflow-y:auto;
@@ -223,6 +223,7 @@ a{
    transition-timing-function: ease;
    display:none;
 }
+
 /* override buttons for 3D effect*/
 .btn-group {
    font-family: 'Raleway', sans-serif;
@@ -264,11 +265,10 @@ a{
 .btn-warning{
    background-color:#EC9E2F;/*slightly brighter orange than default bootstrap*/
    border-color:#E59119;/*slightly brighter orange than default bootstrap*/
-   
 }
 .btn-warning:hover, .btn-warning:active, .btn-warning:focus{
    border-color:#CF6803; /*slightly darker orange than default bootstrap*/
-   background-color: #ec971f;/*making sure bootstrap default orange for this 
+   background-color: #ec971f;/*making sure bootstrap default active orange for this 
    state is applied to override my override*/
 }
 
@@ -278,6 +278,7 @@ a{
    position:absolute; 
    top:45%;
    left: 5%;
+   /*positions that large button on landing page*/
 }
 
 #main{
@@ -285,6 +286,8 @@ a{
    z-index:2;
    animation: fadeIn .2s linear forwards;
    -webkit-animation: myFadeIn .2s linear forwards;
+   /*control fade for the background behind the images for the main section, as
+   well as the main content sections themselves*/
 }
 @-webkit-keyframes fadeIn{
    from{
