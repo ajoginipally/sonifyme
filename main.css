@@ -96,6 +96,7 @@ h3{
    overflow-y:auto;
    overflow-x:hidden;
    padding-bottom:1%;
+   height:auto;
 }
 
 a{
@@ -296,6 +297,7 @@ a{
    /*control fade for the background behind the images for the main section, as
    well as the main content sections themselves*/
 }
+
 @-webkit-keyframes fadeIn{
    from{
       opacity:0;
