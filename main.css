@@ -65,7 +65,7 @@ h3{
    font-size: 1.2em;
    font-family: 'Hammersmith One', sans-serif;
    color: #ebebeb;/*light gray*//*#d9534f;/*reddish*/
-   text-shadow: .07em .07em 0em #6d211f;
+   text-shadow: .07em .07em 0em rgba(0,0,0,0.2);
 }
 
 #top-song, #break-up-main{
