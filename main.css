@@ -298,6 +298,24 @@ a{
    well as the main content sections themselves*/
 }
 
+/*style rules for the twitter button*/
+#shareBox{
+   float:right;
+   position:relative;
+   right:10%;
+}
+/*compensate for tweet button*/
+#sonifyHead{
+   position:relative;
+   left:5%;
+}
+
+@media (max-width:400px){
+   #shareBox{
+      right:-2%;
+   }
+}
+
 @-webkit-keyframes fadeIn{
    from{
       opacity:0;
