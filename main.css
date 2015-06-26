@@ -2,75 +2,85 @@ body{
 /*hidden overflow makes it so that we only see one .card at a time*/
    overflow-x:hidden;
    height: 100%;
-   background-color: rgb(166,32,69);
+   background-color: rgb(115, 3, 3);/* dark red  rgb(166,32,69); /*dark pink*/
    font-family: 'Raleway', sans-serif;
+   color:white;
+}
+
+#landingTitle{
+   color:#F4A02A;/*kind of a sherbet orange color*/
+}
+small{
+   color:#D0AD98!important;/*an orangey gray*/
+}
+/*Fill the screen. Fill it.*/
+.container-fluid{
+   padding: 0;
 }
 
 .modal{
+/*makes it so modal scrolls properly when necessary on smaller screens*/
    -webkit-overflow-scrolling: touch;
    overflow-y: scroll;
 }
 
+<<<<<<< HEAD
 #song-mod {
    font-family: 'Raleway', sans-serif;
 }
 
 
+=======
+>>>>>>> aefa759cd4ae277aabf429fffee58fe7b1885d5d
 h1{
    font-size:3em;
    margin:3%;
-   color:white;
    text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
+
 h2{
-   
    margin:2%;
-    color: white;
-}
-h3{
-   font-size:.9em;
-   margin:.7%;
+   text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
 }
 
-hr{/* not sure the hr is necessary, but this margin gets us some extra 
-breathing room when it is used*/
+h3{
+   font-size:.9em;
    margin:.7%;
 }
 
 #quiz-questions, #break-questions{
    /*Gets us some breathing room between questions */
    margin-top:2px;
-    list-style: none;
-    padding-left: 0;
-    color: #ebebeb;
-    font-family: 'Abel', sans-serif;
-   /* padding-left:3%; */
-}
-#quiz-questions li:last-child, #break-questions li:last-child{
-/*eliminates trailing border on last questions*/
-   border-bottom:none;
+   list-style: none;
+   padding-left: 0;
+   color: #ebebeb;/*light gray*/
+   font-family: 'Nunito', sans-serif;
 }
 
-#quiz-title h1, #break-title h1 {
-    font-family: 'Raleway', sans-serif;
-    color: #ebebeb;
-    font-weight: 100;
+.modal-header  h1{
+   font-family: 'Raleway', sans-serif;
+   color: #ebebeb;
 }
 
-#quiz-title h2, #break-title h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: #d9534f;
-    text-shadow: .07em .07em 0em #6d211f;
+.modal-header h2{
+   font-family: 'Raleway', sans-serif;
+   font-weight: 800;
+   color: #d9534f;/*reddish*/
+   text-shadow: .07em .07em 0em #6d211f;
+}
+#quiz-questions h3, #break-questions h3{
+   padding-top:2%;
+   font-size: 1.2em;
+   font-family: 'Hammersmith One', sans-serif;
+   color: #ebebeb;/*light gray*//*#d9534f;/*reddish*/
+   text-shadow: .07em .07em 0em #6d211f;
 }
 
-#swift-gen, #mood, #top-song, #break-up-main{
-/*These nudge elements around in the main section to keep them from 
-a)triggering the appearance of a scrollbar and b)to fit properly on a card. The
-next few rules also do this.*/
+#top-song, #break-up-main{
    height:40%;
    margin-left: 5%;
    margin-right: 5%;
+   border-bottom:none;
 }
 #swift-gen{
    height:30%;
@@ -79,75 +89,50 @@ next few rules also do this.*/
    height:50%;
 }
 
-#break-up-main{
-   border-bottom:none;
-   height:40%
-}
-/*end section positioning*/
-
-/*To follow: keep the nav's float from pushing these over too far to the left 
-to be considered centered*/
-#top-song h1, #top-song select, #your-gen{ 
-   position:relative;
-}
-#swift-gen h1:first-child{
-   position:relative;
-}
-/*End nav float compensation*/
-
-#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #quiz-title h2, #extra #questions, #playlist, #trendlist{
+#swift-gen h1, #top-song h1, #break-up-main h1, #mood h1, #playlist, #trendlist{
    font-family: 'Raleway', sans-serif;
 }
+
 #trendlist {
    top: 3vh;
-}
-/*These are the rules that define a card*/
-.card{
-   height:97%;
-   text-align:center;
-   overflow-y:auto;
-   overflow-x:hidden;
-   background-color:rgba(150,150,150,.1);
-   border-radius:18px;
-
+   margin-top:3%;
 }
 
 .card-quiz{
    text-align: center;
-   background-color: #2b3e50;
+   background-color: #2b3e50; /*navy */
    overflow-y:auto;
    overflow-x:hidden;
+   padding-bottom:1%;
+   height:auto;
 }
+
 a{
    text-decoration:none;
    font-weight:bold;
-   font-family: 'Philosopher', sans-serif;
+   font-family: 'Raleway', sans-serif;
 }
-
-.container-fluid{
-      padding: 0;
-   }
 
 #page-1 {
    height: 100vh;
-   width: 105%; 
-   background: url("images/pink-city.jpg") fixed;
+   width: 100%; 
+   background: url("images/pink-city-a.jpg") fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    background-attachment:fixed;
    z-index:-2;
-   animation: fadeIn 3s linear forwards;
-   -webkit-animation: fadeIn 3s linear forwards;
+   animation: fadeIn 2.5s linear forwards;
+   -webkit-animation: fadeIn 2.5s linear forwards;
    overflow-x:hidden;
-    
 }
 
 #page-2 {
    top:200%;
    height: 100vh;
-   width: 105%;
+   width: 100%;
+   opacity:0;
    background-color: rgba(0, 0, 0, 0.2);
    background-image: url("images/city.jpg");
    -webkit-background-size: cover;
@@ -155,14 +140,16 @@ a{
    -o-background-size: cover;
    background-size: cover;
    background-position: bottom;
-   animation: fadeIn 3s ease forwards;
-   -webkit-animation: fadeIn 3s ease forwards;
+   animation: fadeIn 2.5s ease 1s forwards;
+   -webkit-animation: fadeIn 2.5s ease 1s forwards;
    z-index:2;
    position:relative;
    display:block;
    overflow-x:hidden;
-    
 }
+#page-2 h1 {
+   color: #70a39c;
+ }
 
 .row {
   margin-right: -15px;
@@ -175,13 +162,8 @@ a{
    color: #87b6eb;
 }
 
-#swift-gen h2 {
-   font-size: 3vh;
-   font-family: 'Abel', sans-serif;
-}
-
 #swift-gen mark {
-   color: #d65656;
+   color: #d65656;/*powdery reddish*/
    background: transparent;
    font-weight: 800;
    font-family: 'Raleway', sans-serif;
@@ -190,84 +172,64 @@ a{
 #mood h1 {
    font-size: 4.5vh;
    margin-bottom: 3vh;
-   color: #779ECB;
+   color: #779ECB; /*light blue*/
 }
 
-#mood h2 {
+#mood h2, #break-up-main h2,  #swift-gen h2 {
    font-size: 3vh;
-   font-family: 'Abel', sans-serif;
+   font-family: 'Hammersmith One', sans-serif;
+}
+/* a card is the translucent gray background behind main content sections*/
+.card{
+   text-align:center;
+   overflow-y:auto;
+   overflow-x:hidden;
+   background-color: rgba(0,0,0,.4);
+   height: 90%;
+   border-radius:18px;
+   margin-top:5%; 
 }
 
 #main-1 {
-   margin-top:5%;
-   background-color: rgba(0,0,0,.3);
-   height: 90%;
    top:0;
    position:absolute;
    z-index:3;
    display:block;
 }
 
-#main-2 {
-   background-color: rgba(0,0,0,.3);
-   height: 90%;
-   position:relative;
-   margin-top:5%;
-
-}
-
-#top-song h1 {
+#top-song h1, #break-up-main h1{
    font-size: 5vh;
-   color: #70a39c;
-}
-
-#break-up-main h1{
-   font-size: 5vh;
-   color: #70a39c;
+   color: #70a39c; /*aqua-ish*/
 }
 
 #break-up-main mark{
    background: transparent;
-   color: #ffa741;
+   color: #ffa741; /*pastel orange*/
    font-weight: 800;
 }
-
-#break-up-main h2 {
-   font-size: 3vh;
-   font-family: 'Abel', sans-serif;
+#quiz-questions li, #break-questions li{
+   padding-bottom:1%;
 }
-
 #quiz-questions li:nth-child(even), #break-questions li:nth-child(even){
+   /*Zebra striping on list elements*/
+   background-color: #4e5d6c; /*grayish bluish*/
+}
+
 /*Zebra striping on list elements*/
-    background-color: #4e5d6c;
-}
-
-#trendlist li{
-   color: white;
-}
-
 #trendlist li:nth-child(even){
-   background-color: rgba(255, 167, 65, 0.29);
+   background-color: rgba(255, 167, 65, 0.29); /*orange*/
 }
 
-#playlist li{
-   color: white;   
-   list-style-type: none;
-}
-
-
+/*Zebra striping on list elements*/
 #playlist li:nth-child(even){
-   background-color: color: rgba(112, 163, 156, 0.32);
+   background-color: color: rgba(112, 163, 156, 0.32);/*light aqua*/
 }
 
 #top-song {
-   height: 40%
+   height: 40%;
 }
 
-.btn-group {
-   font-family: 'Raleway', sans-serif;
-}
-
+/*eliminates transition on collapses so we can fake hide/show toggle w/o JS*/
 .collapsing{
    transition-duration:0s;
    -o-transition-duration:0s;
@@ -278,28 +240,26 @@ a{
    display:none;
 }
 
-a.list-group-item:hover{
-   cursor:default;
-}
-.list-group-item{
-   background-color:transparent;
-}
-.list-group-item:nth-child(even){
-   background-color:#fff2ff;
-   background-opacity:.2;
-  
+/* override buttons for 3D effect*/
+.btn-group {
+   font-family: 'Raleway', sans-serif;
 }
 
 .btn{
    border-width:0 1px 4px 1px;
-   text-transform:small-caps;
-   border-radius:5px;
+   border-radius:8px;
+   text-shadow: .08em .08em 0em rgba(0,0,0,0.2);
+   white-space:normal !important;
+   /*causes word wrap for long quiz responses*/
 }    
 .btn:hover, .btn.active, .btn:active, .btn:focus{
    margin-top: 3px;
    padding-bottom:4px;
    border-bottom-width: 3px;
    margin-bottom:0;
+   transition: all .5s;
+   -webkit-transition: all .5s;
+   outline:none;
 }
 
 .btn-lg:hover, .btn-lg.active, .btn-lg:active, .btn-lg:focus{
@@ -307,10 +267,9 @@ a.list-group-item:hover{
    padding-bottom:7px;
    border-bottom-width: 5px;
    margin-bottom:0;
-}
-
-button .btn {
-   text-transform:small-caps!important;
+   transition: all .5s;
+   -webkit-transition: all .5s;
+   outline:none;
 }
 
 .btn a{
@@ -318,10 +277,24 @@ button .btn {
    text-decoration:none;
    outline:none;
 }
+   /*brighter color overrides for the orange buttons*/
+.btn-warning{
+   background-color:#EC9E2F;/*slightly brighter orange than default bootstrap*/
+   border-color:#E59119;/*slightly brighter orange than default bootstrap*/
+}
+.btn-warning:hover, .btn-warning:active, .btn-warning:focus{
+   border-color:#CF6803; /*slightly darker orange than default bootstrap*/
+   background-color: #ec971f;/*making sure bootstrap default active orange for this 
+   state is applied to override my override*/
+}
+
+/* end general button overrides*/
+
 #launcher{
    position:absolute; 
    top:45%;
-    left: 4%;
+   left: 5%;
+   /*positions that large button on landing page*/
 }
 
 #main{
@@ -329,16 +302,28 @@ button .btn {
    z-index:2;
    animation: fadeIn .2s linear forwards;
    -webkit-animation: myFadeIn .2s linear forwards;
+   /*control fade for the background behind the images for the main section, as
+   well as the main content sections themselves*/
 }
 
-#sharingIsProbablyNotCaring{
-   position:fixed;
-   top:10%;
-   right:2%;
-   z-index:3;
-   height:10%;
-   border:1px solid lavender;
+/*style rules for the twitter button*/
+#shareBox{
+   float:right;
+   position:relative;
+   right:10%;
 }
+/*compensate for tweet button*/
+#sonifyHead{
+   position:relative;
+   left:5%;
+}
+
+@media (max-width:400px){
+   #shareBox{
+      right:-2%;
+   }
+}
+
 @-webkit-keyframes fadeIn{
    from{
       opacity:0;
@@ -347,7 +332,7 @@ button .btn {
       opacity:1;
    }
 }
-@keyframes myFadeIn{
+@keyframes fadeIn{
    from{
       opacity:0;
    }
@@ -355,5 +340,3 @@ button .btn {
       opacity:1;
    }
 }
-    
-

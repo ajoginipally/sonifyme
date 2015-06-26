@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <title>Swift-ly</title>
+   <head>
+        <title>SonifyMe</title>
         <meta charset="UTF-8">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:500,400,600,800' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-        <!-- Latest compiled and minified CSS -->
+        
+        <!-- Some Google Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+        
+        <!-- Latest compiled and minified Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <!--<link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">-->
+        
+        <!--Latest jQuery and Bootstrap JS-->
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
@@ -17,101 +20,28 @@
         <meta name="author" content="Abhi Joginipally, Susan Souza, Kameron Sween">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- SonifyMe's style sheet-->
         <link href='main.css' rel='stylesheet' type='text/css'>
-    </head>
-
-    <body>
-        
-<div class="container-fluid">
-        <!-- This is your quiz page -->
-<!-- Button trigger modal -->
-   <button type="button" id = "launcher" class="btn btn-warning btn-lg col-xs-3 col-xs-offset-4 collapse in" data-toggle="modal" data-target="#myModal-1">
-      <span id="song-mod" class="hidden-xs hidden-sm">What song do you Sonify?</span><span id="song-mod" class = "visible-xs visible-sm">Start</span>
-   </button>
-    <!-- Modal -->
-    <div id="myModal-1" class="modal fade" data-backdrop="static" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content card-quiz">
-                <form id="quiz" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <div id="quiz-title" class="modal-header">
-                        <h1>Taylor.sonify</h1>
-                        <h2>How does swift define your life?</h2>
-                    </div>
-                    <ul id="quiz-questions">
-                        <li id="quiz-question1">
-                            <h3>Question 1</h3>
-                            <input type="radio" name="quiz-quest1" value="quiz1-opt1"> Option 1
-                            <input type="radio" name="quiz-quest1" value="quiz1-opt2"> Option 2
-                            <input type="radio" name="quiz-quest1" value="quiz1-opt3"> Option 3
-                            <input type="radio" name="quiz-quest1" value="quiz1-opt4"> Option 4
-
-                        </li>
-
-                        <li id="quiz-question2">
-                            <h3>Question 2</h3>
-                            <input type="radio" name="quiz-quest2" value="quiz2-opt1"> option 1
-                            <input type="radio" name="quiz-quest2" value="quiz2-opt2"> option 2
-                            <input type="radio" name="quiz-quest2" value="quiz2-opt3"> option 3
-                            <input type="radio" name="quiz-quest2" value="quiz2-opt4"> option 4
-
-                        </li>
-
-                        <li id="quiz-question3">
-                            <h3>Question 3</h3>
-                            <input type="radio" name="quiz-quest3" value="quiz3-opt1"> option 1
-                            <input type="radio" name="quiz-quest3" value="quiz3-opt2"> option 2
-                            <input type="radio" name="quiz-quest3" value="quiz3-opt3"> option 3
-                            <input type="radio" name="quiz-quest3" value="quiz3-opt4"> option 4
-
-                        </li>
-
-                        <li id="quiz-question4">
-                            <h3>Question 4</h3>
-                            <input type="radio" name="quiz-quest4" value="quiz4-opt1"> option 1
-                            <input type="radio" name="quiz-quest4" value="quiz4-opt2"> option 2
-                            <input type="radio" name="quiz-quest4" value="quiz4-opt3"> option 3
-                            <input type="radio" name="quiz-quest4" value="quiz4-opt4"> option 4
-
-                        </li>
-
-                        <li id="quiz-question5">
-                            <h3>Question 5</h3>
-                            <input type="radio" name="quiz-quest5" value="quiz5-opt1"> option 1
-                            <input type="radio" name="quiz-quest5" value="quiz5-opt2"> option 2
-                            <input type="radio" name="quiz-quest5" value="quiz5-opt3"> option 3
-                            <input type="radio" name="quiz-quest5" value="quiz5-opt4"> option 4
-
-                        </li>
-
-                        <li id="quiz-question6">
-                            <h3>Question 6</h3>
-                            <input type="radio" name="quiz-quest6" value="quiz6-opt1"> option 1
-                            <input type="radio" name="quiz-quest6" value="quiz6-opt2"> option 2
-                            <input type="radio" name="quiz-quest6" value="quiz6-opt3"> option 3
-                            <input type="radio" name="quiz-quest6" value="quiz6-opt4"> option 4
-
-                        </li>
-
-                        <li id="quiz-question7">
-                            <h3>Question 7</h3>
-                            <input type="radio" name="quiz-quest7" value="quiz7-opt1"> option 1
-                            <input type="radio" name="quiz-quest7" value="quiz7-opt2"> option 2
-                            <input type="radio" name="quiz-quest7" value="quiz7-opt3"> option 3
-                            <input type="radio" name="quiz-quest7" value="quiz7-opt4"> option 4
-
-                        </li>
-
-                        <li id="quiz-question8">
-                            <h3>Question 8</h3>
-                            <input type="radio" name="quiz-quest8" value="quiz8-opt1"> option 1
-                            <input type="radio" name="quiz-quest8" value="quiz8-opt2"> option 2
-                            <input type="radio" name="quiz-quest8" value="quiz8-opt3"> option 3
-                            <input type="radio" name="quiz-quest8" value="quiz8-opt4"> option 4
-
-                        </li>
-                    </ul>
+   </head>
+   <body> 
+      <div class="container-fluid">
+      <h1 id="landingTitle" class="col-xs-10">Sonify.Me<small class="col-xs-10 hidden-xs">What do you Sonify?</small></h1>
+      <!-- Button triggers modal -->
+         <div class="col-xs-3 col-xs-offset-4" id="launcher">
+            <button type="button"  class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal-1" tabindex="0">
+               <span class="hidden-xs hidden-sm">Begin Sonification</span><span class = "visible-xs visible-sm">Start</span>
+            </button>
+         </div>
+         <!-- Modal -->
+         <div id="myModal-1" class="modal fade" data-backdrop="static" role="dialog">
+           <div class="modal-dialog">
+               <!-- Modal content--> 
+               <form id="quiz" class="col-xs-12">
+                  <div class="modal-content card-quiz" id="firstQuiz">
+                     <!-- This is your quiz page -->
+                     <!-- To fix: with the buttons, there is some overflow with longer responses. ..maybe dropdown on smaller screens?--> 
                     
+<<<<<<< HEAD
                     <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#myModal-2">Next</button>
 
             </div>
@@ -188,55 +118,329 @@
          
 <div id="main" class="row collapse">
     <div id="page-1" class="collapse"></div>
+=======
+                        <div class="modal-header">
+                              <h1>Taylor.sonify</h1>
+                              <h2>How does Swift define you?</h2>
+                        </div>
+                        <ul id="quiz-questions">
+                           <li id="quiz-question1">
+                               <h3>How did you feel waking up today?</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt1" tabindex="1"/>5 more min please
+                        </label>
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt2" tabindex="2"/>I hate the light
+                        </label>
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt3"tabindex="3" />Sleep is the cousin of death
+                        </label>
+                        <label class="btn btn-default btn-danger">
+                           <input type="radio" id="quiz-quest1" name="quiz-quest1" value="quiz1-opt4" tabindex="4"/>I woke up at 1PM, so pretty good
+                        </label>
+                     </div>
+                           </li>
+
+                           <li id="quiz-question2">
+                               <h3>You catch a magic fish that offers to grant you a wish if you release it. You...</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt1" tabindex="5"/>Get so excited that you shake the boat and it falls into the water
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt2" tabindex="6"/>Cut it off half way through its' speech and toss it on the grill
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt3"tabindex="7"/>Threaten it to get more wishes
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest2" name="quiz-quest2" value="quiz2-opt4"tabindex="8"/>Accidently wish for something stupid
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="quiz-question3">
+                               <h3>Which of these characters tends to be your favorite?</h3>
+                                <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest3" name="quiz-quest3" value="quiz3-opt1"tabindex="9"/>The sidekick
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest3" name="quiz-quest3" value="quiz3-opt2"tabindex="10"/>The hero
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest3" name="quiz-quest3" value="quiz3-opt3"tabindex="11"/>The villain
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest3" name="quiz-quest3" value="quiz3-opt4"tabindex="12"/>The mentor or love interest
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="quiz-question4">
+                               <h3>What's your weakness?</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest4" name="quiz-quest4" value="quiz4-opt1"tabindex="13"/>Dollar soft-serve
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest4" name="quiz-quest4" value="quiz4-opt2"tabindex="14"/>Sales
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest4" name="quiz-quest4" value="quiz4-opt3"tabindex="15"/>Rom-Coms
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest4" name="quiz-quest4" value="quiz4-opt4"tabindex="16"/>Kittens and/or puppies
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="quiz-question5">
+                               <h3>What's your biggest pet peeve?</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest5" name="quiz-quest5" value="quiz5-opt1"tabindex="17"/>Getting your hand stuck in a Pringles can
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest5" name="quiz-quest5" value="quiz5-opt2"tabindex="18"/> Stepping on a LEGO
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest5" name="quiz-quest5" value="quiz5-opt3"tabindex="19"/>Having to go to the bathroom once you're comfortable in bed
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest5" name="quiz-quest5" value="quiz5-opt4"tabindex="20"/>When your cookie doesnt fit in the glass
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="quiz-question6">
+                               <h3>What is your focus when choosing how you want to look?</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest6" name="quiz-quest6" value="quiz6-opt1"tabindex="21"/>Hair
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest6" name="quiz-quest6" value="quiz6-opt2"tabindex="22"/>Skin
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest6" name="quiz-quest6" value="quiz6-opt3"tabindex="23"/>Clothes
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest6" name="quiz-quest6" value="quiz6-opt4"tabindex="24"/>Accessorizing
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="quiz-question7">
+                               <h3>How do you deal with break ups?</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest7" name="quiz-quest7" value="quiz7-opt1"tabindex="25"/>It's ok&semi; ice cream is always there for me
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest7" name="quiz-quest7" value="quiz7-opt2"tabindex="26"/>Shopping Therapy!
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest7" name="quiz-quest7" value="quiz7-opt3"tabindex="27"/>Rom-Com marathon
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest7" name="quiz-quest7" value="quiz7-opt4"tabindex="28"/>Mope in a corner
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="quiz-question8">
+                               <h3>Where is your ideal date?</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest8" name="quiz-quest8" value="quiz8-opt1"tabindex="29"/>Fancy dinner
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest8" name="quiz-quest8" value="quiz8-opt2"tabindex="30"/>Amusment Park
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest8" name="quiz-quest8" value="quiz8-opt3"tabindex="31"/>Movies
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="quiz-quest8" name="quiz-quest8" value="quiz8-opt4"tabindex="32"/>Aquarium
+                                 </label>
+                              </div>
+                           </li>
+                        </ul>
+                       <!-- button hides first quiz; shows second. Doing it this way allows form to span both-->
+                       <input type="button" class="btn btn-warning" id="progressQuiz" value ="Next" tabindex="33"/>
+                  </div><!-- end quiz modal-content-->
+           
+               <!-- Modal content 2: break-up quiz-->
+                  <div class="modal-content card-quiz hide" id="secondQuiz">
+                  <!-- this is your break up page -->
+                     <div id="break-up" class="col-xs-12">
+                        <div class="modal-header">
+                           <h1>swift.breakup</h1>
+                           <h2>Find out what song defines your break up!</h2>
+                        </div>
+                        <ul id="break-questions">
+                           <li id="break-question1">
+                              <h3>You find a stash of your ex's stuff, what do you do?</h3>
+                              <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest1" id="break-quest1" value="break1-opt1"tabindex="34"/> Burn it
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest1" id="break-quest1" value="break1-opt2"tabindex="35"/> Throw it out
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest1" id="break-quest1" value="break1-opt3"tabindex="36"/> Give it back
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest1" id="break-quest1" value="break1-opt4"tabindex="37"/> Hold it to your face and cry
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="break-question2">
+                               <h3>The best writer to describe your relationship might have been:</h3>
+                                <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" id="break-quest2" name="break-quest2" value="break2-opt1"tabindex="38"/>Poe
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest2" id="break-quest2" value="break2-opt2"tabindex="39"/>Dickens
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest2" id="break-quest2" value="break2-opt3"tabindex="40"/>Hemmingway
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest2" id="break-quest2" value="break2-opt4"tabindex="41"/>Chaucer
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="break-question3">
+                              <h3>Pick one of these:</h3>
+                              <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest3" id="break-quest3" value="break3-opt1"tabindex="42"/>Evisceration
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest3" id="break-quest3" value="break3-opt2"tabindex="43"/>Hugs
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest3" id="break-quest3" value="break3-opt3"tabindex="44"/>Sleep
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest3" id="break-quest3" value="break3-opt4"tabindex="45"/>Dragons
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="break-question4">
+                               <h3>The best phrase for this week is:</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest4" id="break-quest4" value="break4-opt1"tabindex="46"/>When it rains, it pours.
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest4" id="break-quest4" value="break4-opt2"tabindex="47"/>Sticks and stones will break my bones...
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest4" id="break-quest4" value="break4-opt3"tabindex="48"/>Bright-eyed and busy-tailed
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest4" id="break-quest4" value="break4-opt4"tabindex="49"/>Good things come in threes
+                                 </label>
+                              </div>
+                           </li>
+
+                           <li id="break-question5">
+                               <h3>What are you gonna do now?</h3>
+                               <div class="" data-toggle="buttons"  aria-label="...">
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest5" id="break-quest5" value="break5-opt1"tabindex="50"/>Eat ice cream and binge Netflix
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest5" id="break-quest5" value="break5-opt2"tabindex="51"/>Become an expert on drinking wine alone
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest5" id="break-quest5" value="break5-opt3"tabindex="52"/>Single life is the best life
+                                 </label>
+                                 <label class="btn btn-default btn-danger">
+                                    <input type="radio" name="break-quest5" id="break-quest5" value="break5-opt4"tabindex="53"/>Travel the world until you're broke
+                                 </label>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  <!-- button to a) submit form data b)close modal and c)toggle hide/show states for main content and launcher button-->
+                     <input type="submit" id="submitButton" value ="Sonify!"class="btn btn-warning" accesskey="b" tabindex="54" data-dismiss="modal">
+
+                  </div><!-- end breakup modal-content-->                    
+               </form><!-- end quiz form. Yes, this is kind of weird-looking. Not sure if this will work properl across two modals, but we can try.  Fix later if kaput. -->
+            </div><!--end breakup modal-dialog-->
+         </div><!-- End breakup quiz modal-->
+           
+         <div id="main" class="row hide">
+            <div id="page-1" class="hide"></div><!-- div page-1 closed here to remain fixed to back while content scrolls-->
+            <!-- First main 'page' content. Contains Album result, Sonify song, Mood & Playlist-->
+>>>>>>> aefa759cd4ae277aabf429fffee58fe7b1885d5d
             <div id="main-1" class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-                <div id="swift-gen">
-                    <h1 id="gen">YOUR <mark>SWIFT GEN</mark> IS</h1>
-                    <h2 id="your-gen">RED</h2>
-                    <h1 id="song">YOU <mark>SONIFY</mark></h1>
-                    <h2 id="your-song" class="col-xs-12 col-sm-12 col-md-12">We are Never Ever Getting Back together</h2>
-                </div>
+               <div id="swift-gen">
+                    <h1>YOUR <mark>SWIFT GEN</mark> IS</h1>
+                    <h2 id="your-gen"></h2>
+                    <div id="shareBox"></div>
+                    <h1 id="sonifyHead">YOU <mark>SONIFY</mark></h1>
+                    <h2 id="your-song"></h2>
+                    
+               </div>
 
-                <div id="mood">
-                    <h1 class="col-xs-12">MOOD PLAYLIST</h1>
-                    <h2>SAD</h2> 
-                    <ol id="playlist" class="col-xs-12 col-sm-12 col-md-12">
-                        <li value="1">Song 1</li>
-                        <li value="2">Song 2</li>
-                        <li value="3">Song 3</li>
-                        <li value="4">Song 4</li>
-                        <li value="5">Song 5</li>
-                    </ol>
-                </div>
+               <div id="mood">
+                  <h1 class="">MOOD PLAYLIST</h1>
+                  <h2>SAD</h2> 
+                  <ol id="playlist" class="list-unstyled text-center">
+                     <li>Back to December</li>
+                     <li>Sad Beautiful Tragic</li>
+                     <li>Dear John</li>
+                     <li>White Horse</li>
+                     <li>You&apos;re not Sorry</li>
+                  </ol>
+               </div>
             </div>
-        
-    
-        <div id="page-2">
-            <div id="main-2" class="card col-xs-12 col-sm-10 col-sm-offset-1  col-md-6 col-md-offset-3">
-
-                <form id="top-song">
-                    <h1>TRENDING</h1>
-                    <div class="btn-group" role="group" aria-label="...">
-                      <button type="button" class="btn btn-default active btn-warning">Today</button>
-                      <button type="button" class="btn btn-default btn-warning">Week</button>
-                      <button type="button" class="btn btn-default btn-warning">Month</button>
-                      <button type="button" class="btn btn-default btn-warning">&infin;</button>
-                    </div>
-                    <ol id="trendlist" class="col-xs-12 col-sm-12 col-md-12">
-                        <li value="1">Song 1</li>
-                        <li value="2">Song 2</li>
-                        <li value="3">Song 3</li>
-                        <li value="4">Song 4</li>
-                        <li value="5">Song 5</li>
-                    </ol>
-                </form>
-
-                <div id="break-up-main">
+            <!-- Second page. Contains information on Sonify trends and breakup song result-->
+            <div id="page-2">
+               <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                  <h1>TRENDING</h1>
+                  <form><!-- form has no action, as this does not submit anything as of yet-->
+                        <div class="btn-group" data-toggle="buttons" role="group" aria-label="...">
+                        <label class="btn btn-default active btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="today"checked tabindex="56"> Today
+                        </label>
+                        <label class="btn btn-default  btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="week" tabindex="57"> Week
+                        </label>
+                        <label class="btn btn-default  btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="month" tabindex="58"> Month
+                        </label>
+                        <label class="btn btn-default  btn-warning">
+                           <input type="radio" name="trends" id="trends" autocomplete="off" value="all" tabindex="59"> &infin;
+                        </label>
+                     </div>
+                  </form>
+                  <ol id="trendlist">
+                     <li>Love Story</li>
+                     <li>Shake it Off</li>
+                     <li>The Best Day</li>
+                     <li>Last Kiss</li>
+                     <li>Dear John</li>
+                  </ol>
+                  <div id="break-up-main">
                     <h1>YOUR <mark>BREAK UP SONG</mark> IS</h1>
-                    <h2>Teardrops on My Guitar</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</body>
+                    <h2 id="your-breakup"></h2>
+                  </div>
+               </div><!-- end second page content #main-2-->
+            </div><!-- end second page-->
+         </div> <!-- end main section-->
+      </div><!-- end outermost container-fluid -->
+      <script src="script.js"></script>
+   </body>
 </html>
